@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Dashboard</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Client</th>
+            <th>Statut</th>
+            <th>Technicien</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ticket in tickets %}
+        <tr>
+            <td>{{ ticket.titre }}</td>
+            <td>{{ ticket.client.nom }}</td>
+            <td>{{ ticket.statut }}</td>
+            <td>{{ ticket.utilisateur.nom if ticket.utilisateur else 'Non assigné' }}</td>
+            <td><a href="/tickets/{{ ticket.id }}" class="btn btn-sm btn-info">Voir</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

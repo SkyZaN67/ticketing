@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="mb-4 text-primary">📊 Dashboard des Statistiques</h2>
+
+<!-- 📅 Filtres Périodes -->
+<form method="get" class="row mb-4 g-3 align-items-end">
+  <div class="col-md-3">
+    <label for="periode" class="form-label">Période rapide :</label>
+    <select name="periode" class="form-select" onchange="this.form.submit()">
+      <option value="7jours" {% if periode == '7jours' %}selected{% endif %}>7 derniers jours</option>
+      <option value="mois_dernier" {% if periode == 'mois_dernier' %}selected{% endif %}>Mois dernier</option>
+      <option value="tous" {% if periode == 'tous' %}selected{% endif %}>Tout</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="date_debut" class="form-label">Date début :</label>
+    <input type="date" id="date_debut" name="date_debut" class="form-control" value="{{ request.args.get('date_debut', '') }}">
+  </div>
+  <div class="col-md-3">
+    <label for="date_fin" class="form-label">Date fin :</label>
+    <input type="date" id="date_fin" name="date_fin" class="form-control" value="{{ request.args.get('date_fin', '') }}">
+  </div>
+  <div class="col-md-3 d-flex align-items-end">
+    <button type="submit" class="btn btn-primary w-100">Filtrer par dates</button>
+  </div>
+</form>
+
+<!-- 🔥 Graphiques -->
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <div class="card shadow-sm p-3">
+      <h5 class="text-center">🛠️ Répartition des Tickets</h5>
+      <canvas id="statutPie"></canvas>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <div class="card shadow-sm p-3">
+      <h5 class="text-center">👨‍💻 Statistiques Techniciens</h5>
+      <canvas id="topTechBar"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <div class="card shadow-sm p-3">
+      <h5 class="text-center">📅 Tickets créés par Mois</h5>
+      <canvas id="ticketsMois"></canvas>
+    </div>
+  </div>
+  <div class="col-md-6 mb-4">
+    <div class="card shadow-sm p-3">
+      <h5 class="text-center">⏱️ Temps Moyen de Résolution</h5>
+      <canvas id="tempsMoyenTech"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 mb-4">
+    <div class="card shadow-sm p-3">
+      <h5 class="text-center">🏢 Tickets par Client (Top 5)</h5>
+      <canvas id="ticketsClient"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 mb-4">
+    <div class="card shadow-sm p-3">
+      <h5 class="text-center">⏱️ Temps Passé vs Temps Facturé (Techniciens)</h5>
+      <canvas id="tempsPasseFacture"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- 🚀 Scripts Chart.js + ChartDataLabels -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+
+<script>
+const animationOptions = {
+  animations: {
+    tension: {
+      duration: 1000,
+      easing: 'easeInOutQuad',
+      from: 1,
+      to: 0,
+      loop: false
+    }
+  }
+};
+
+const commonBarOptions = {
+  responsive: true,
+  plugins: {
+    legend: { display: false },
+    datalabels: {
+      color: '#fff',
+      anchor: 'center',
+      align: 'center',
+      font: { weight: 'bold' },
+      formatter: Math.round
+    }
+  },
+  scales: { y: { beginAtZero: true } },
+  ...animationOptions
+};
+
+// 🎯 Pie Chart Statut
+new Chart(document.getElementById('statutPie'), {
+  type: 'pie',
+  data: {
+    labels: ['En attente', 'En cours', 'Terminé'],
+    datasets: [{
+      data: [
+        {{ statut_counts['En attente'] }},
+        {{ statut_counts['En cours'] }},
+        {{ statut_counts['Terminé'] }}
+      ],
+      backgroundColor: ['#6c757d', '#0d6efd', '#198754'],
+      borderColor: '#fff',
+      borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom' },
+      datalabels: {
+        color: '#fff',
+        font: { weight: 'bold' },
+        formatter: (value, context) => {
+          const total = context.chart.data.datasets[context.datasetIndex].data.reduce((a, b) => a + b, 0);
+          return total ? `${value} (${(value / total * 100).toFixed(1)}%)` : '';
+        }
+      }
+    },
+    ...animationOptions
+  },
+  plugins: [ChartDataLabels]
+});
+
+// 👨‍💻 Top Techniciens
+new Chart(document.getElementById('topTechBar'), {
+  type: 'bar',
+  data: {
+    labels: [{% for tech, count in top_intervenants %}"{{ tech }}",{% endfor %}],
+    datasets: [{
+      label: 'Tickets traités',
+      data: [{% for tech, count in top_intervenants %}{{ count }},{% endfor %}],
+      backgroundColor: '#0dcaf0'
+    }]
+  },
+  options: commonBarOptions,
+  plugins: [ChartDataLabels]
+});
+
+// 📅 Tickets par Mois
+new Chart(document.getElementById('ticketsMois'), {
+  type: 'line',
+  data: {
+    labels: [{% for mois, count in tickets_par_mois %}"{{ mois }}",{% endfor %}],
+    datasets: [{
+      label: 'Tickets',
+      data: [{% for mois, count in tickets_par_mois %}{{ count }},{% endfor %}],
+      borderColor: '#0d6efd',
+      backgroundColor: '#0d6efd',
+      fill: false,
+      tension: 0.4
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { datalabels: { display: false } },
+    scales: { y: { beginAtZero: true } },
+    ...animationOptions
+  }
+});
+
+// ⏱️ Temps Moyen Résolution
+new Chart(document.getElementById('tempsMoyenTech'), {
+  type: 'bar',
+  data: {
+    labels: [{% for tech, temps in temps_moyen_intervenants %}"{{ tech }}",{% endfor %}],
+    datasets: [{
+      label: 'Temps moyen (min)',
+      data: [{% for tech, temps in temps_moyen_intervenants %}{{ temps|round(1) }},{% endfor %}],
+      backgroundColor: '#ffc107'
+    }]
+  },
+  options: commonBarOptions,
+  plugins: [ChartDataLabels]
+});
+
+// 🏢 Tickets par Client
+new Chart(document.getElementById('ticketsClient'), {
+  type: 'bar',
+  data: {
+    labels: [{% for client, count in tickets_par_client %}"{{ client }}",{% endfor %}],
+    datasets: [{
+      label: 'Tickets créés',
+      data: [{% for client, count in tickets_par_client %}{{ count }},{% endfor %}],
+      backgroundColor: '#6610f2'
+    }]
+  },
+  options: commonBarOptions,
+  plugins: [ChartDataLabels]
+});
+
+// ⏱️ Temps Passé vs Temps Facturé
+new Chart(document.getElementById('tempsPasseFacture'), {
+  type: 'bar',
+  data: {
+    labels: [{% for tech in temps_passe_intervenants.keys() %}"{{ tech }}",{% endfor %}],
+    datasets: [
+      {
+        label: 'Temps Passé (min)',
+        data: [{% for tech, value in temps_passe_intervenants.items() %}{{ value }},{% endfor %}],
+        backgroundColor: '#0d6efd'
+      },
+      {
+        label: 'Temps Facturé (min)',
+        data: [{% for tech, value in temps_facture_intervenants.items() %}{{ value }},{% endfor %}],
+        backgroundColor: '#198754'
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom' },
+      datalabels: {
+        color: '#fff',
+        anchor: 'end',
+        align: 'start',
+        font: { weight: 'bold' }
+      }
+    },
+    scales: { y: { beginAtZero: true } },
+    ...animationOptions
+  },
+  plugins: [ChartDataLabels]
+});
+</script>
+
+{% endblock %}

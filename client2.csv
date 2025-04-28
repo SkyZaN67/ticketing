@@ -1,0 +1,505 @@
+Code (tiers);Type de tiers;Nom;Adresse 1 (facturation);Code postal (facturation);Ville (facturation);Code Pays (facturation);E-mail (facturation);Téléphone fixe (facturation)
+1;Client;A FLEUR D'O;24 avenue du parmelan;74000;ANNECY;FR;afleurdo.annecy@gmail.com;
+10;Client;ALAIN GAIMARD;180 Chemin de la Ferme Palatin;73370;LA CHAPELLE DU MT DU CHAT;;alain.gaimard@outlook.com;
+100;Client;Eric CHENEVEZ;69, route des Champs Laitiers;74800;ETEAUX;;;
+101;Client;ERM;BUSINESS CORNER - BAT A;73190;CHALLES LES EAUX;FR;celine@groupe-erm.fr;
+102;Client;ERM CONSTRUCTION;BUSINESS CORNER - BAT A;73190;CHALLES LES EAUX;FR;celine@groupe-erm.fr;04 79 75 22 70
+103;Client;ERRE AMENAGEMENT;David ZANINI;73290;LA MOTTE SERVOLEX;FR;david.zanini@erre-amenagement.fr;
+104;Client;ESPRIT ELECTRICITE;8 Rue des contamines;74940;ANNECY LE VIEUX;;info@esprit-electricite.com;
+105;Client;EXCALIBUR;180 RUE DU GENEVOIS;73000;CHAMBERY;FR;contact@excalibur-comics.fr;
+106;Client;EXCELL ENSEIGNES;3 route de Vovray;74000;ANNECY;FR;Christopher@excellenseignes.com;
+107;Client;FB CONCEPT - Fabienne BRUSCHETTA;616 ROUTE D'HAUTEVILLE;73160;ST THIBAUD DE COUZ;FR;f.bruschetta@outlook.fr;
+108;Client;FB CONSEIL;Franck BRETON;1300;MASSIGNEU DE RIVES;FR;cfbreton@orange.fr;
+109;Client;FINANCIERE NEUVIEME AVENUE;155 sous les Côtes;73100;PUGNY CHATENOD;;;
+11;Client;ALCHIMIE ASSURANCES;POLYGONE ALPHA;73000;CHAMBERY;FR;administratif@alchimieassurances.com;
+110;Client;FRANCE CYCLISME;604, rue Denis Papin;73290;LA MOTTE SERVOLEX;FR;;04 79 60 08 80
+111;Client;FRANCE PROPRETÉ IMMOBILIÈRE;15 Avenue du Pont de Tasset;74940;MEYTHET;FR;s.dasse@france-proprete-immobiliere.fr;
+112;Client;Fréderic HANTSCHOOTTE;Le Château;73170;BILLIEME;;;
+113;Client;FROID SAVOIE;370 rue Champagnes;73290;LA MOTTE SERVOLEX;;;
+114;Client;FT NETTOYAGE;33, Avenue de la république;73140;ST MICHEL DE MAURIENNE;FR;guillaume.turon@ftnettoyage.fr;
+115;Client;GAEC LA BELLE ETOILE;M. Jean Luc PUGET;73110;LA CHAPELLE BLANCHE;FR;jlpuget@outlook.fr;
+116;Client;GARCIN LINGERIE FINE;23 place Notre Dame;74000;ANNECY;FR;lingeriegarcin1933@orange.fr;
+117;Client;Géraldine COPPIER;LE CONSERVATEUR;74290;VEYRIER DU LAC;;;
+118;Client;Gérard COTTET;Les Vellats;73170;ST PAUL SUR YENNE;FR;studio@gerard-cottet.com;06 60 05 05 07
+119;Client;GL2R;180 rue du Genevois;73000;CHAMBERY;;;04 79 70 32 14
+12;Client;ALPEFFECT IMMOBILIER;Mme Sabine GAUTHIER;73110;LA CROIX DE LA ROCHETTE;FR;contact@alpeffectimmobilier.com;
+120;Client;GLOBALIS;ZA Le Pontet;73420;DRUMETTAZ-CLARAFOND;FR;vchampion@globalis.pro;04 79 54 77 97
+121;Client;GRANGE MECANO SOUDURE;ZA LES COTES;73190;ST JEOIRE PRIEURE;FR;contact@gmsoudure.com;04 79 71 68 38
+122;Client;GRENKE LOCATION;864, Chemin des Fontaines;38190;BERNIN;FR;merenouf@grenke.fr;
+123;Client;GROUPE ELYPSE;42 rue du Pré Demaison;73000;CHAMBERY;;;
+124;Client;Guy BERLIAT;37 avenue Jean Jaures;73000;CHAMBERY;FR;gberliat@outlook.fr;
+125;Client;HESKA ENERGIES;1366 route de Glapigny;74230;THONES;FR;comptabilite@heska-energies.com;
+126;Client;REJ CONSEIL / HOMISENS;LE QUINTESSENCE 4 C RUE GUYNEMER;74000;ANNECY;FR;rejane.dupont@homisens.fr;
+127;Client;HOTEL DU POETE;55 Bld Charcot;73100;TRESSERVE;FR;hotel-du-poete@wanadoo.fr;04 79 61 21 67
+128;Client;IDEO INDUSTRIES;103 Impasse Lavoisier;38530;PONTCHARRA;FR;compta@ideoindustries.com;09.84.06.49.42
+129;Client;IMM SERVICES;12 Bis route de la salle;74960;CRAN GEVRIER;FR;compta@imm-services.fr;450014863
+13;Client;ALPES SENIOR SERVICES;PETITS FILS;74000;ANNECY;FR;arnaud.muller@petits-fils.com;04 58 02 00 00
+130;Client;IMMOBILIERE COURCHEVEL;Le Praz;73120;COURCHEVEL1300;FR;info@immobiliere-courchevel.fr;04 79 08 41 19
+131;Client;IN & MOTION;10 rue de la Lyre;74960;ANNECY;FR;invoicing@inemotion.com;
+132;Client;INDIVISION VOUTHIER;La Bouverie;73390;BETTON BETTONET;;;04 79 36 43 18
+133;Client;INGEPRO;BAT. LA FABRIK;73000;BARBERAZ;FR;anthony.sourd@ingepro-sas.fr;
+134;Client;Isabelle FERRARI;142 route de serraz;73370;LE BOURGET DU LAC;;i.ferrari@comparetimmobilier.com;
+135;Client;J.C. BORDON;281 route des Creuses;74600;ANNECY;FR;jean-christophe@bordon.fr;
+136;Client;JACQUES RATEL INGENIERIE;2 rue de l'Epine;73160;COGNIN;FR;jri73@wanadoo.fr;04 79 69 27 82
+137;Client;JEAN MANUEL BEUZELIN - DEA;Marchand de Biens;74000;ANNECY;;;
+138;Client;Jean Paul PICHAT;11 le vieux chemin;73000;BARBERAZ;FR;pichat73@hotmail.fr;
+139;Client;JLP ARCHITECTURE;725 Bd Barrier;73100;AIX LES BAINS;FR;lagence@jlp-archi.fr;04 79 61 44 02
+14;Client;EURL JULOINE;Mission Driver;74600;ANNECY;FR;romain@missiondriver.fr;
+140;Client;Jocelyne BOUCHARD;;73290;LA RAVOIRE;;;
+141;Client;Julien COUTIER;;73000;CHAMBERY;;;
+142;Client;LA CONTINENTALE DES EAUX;496 rue Emile Zola;73490;LA RAVOIRE;FR;pellarindominique@hotmail.com;
+143;Client;SAND'MALO;La Fée Maraboutée;73000;CHAMBERY;FR;sand-malo@outlook.com;
+144;Client;LADAME METALLERIE;725 route de la Caille;74350;ALLONZIER LA CAILLE;FR;contact@ladamemetallerie.com;
+145;Client;L'ARCHE HAUTE SAVOIE;12 RUE DE LA VOUTE;74290;VEYRIER DU LAC;FR;compta@arche-hautesavoie.org;04 50 65 06 95
+147;Client;Laurent FALCO;;73100;AIX LES BAINS;FR;lfalco@auxicap.com;
+148;Client;LE 7 BISTROT PERRIERE;Mme NORA BEZZI;74000;ANNECY;FR;Le7bistrotperriere@outlook.com;
+149;Client;LE CORTIE;32 place de l'Eglise;73420;DRUMETTAZ CLARAFOND;FR;directioncortie@gmail.com;04 79 63 65 99
+15;Client;ALPHA 74;12 bis, route de la Salle;74960;CRAN GEVRIER;;;
+150;Client;LES CHANTIERS VALORISTES;BP 70532;73005;CHAMBERY CEDEX;FR;secretariat@chantiers-valoristes.fr;04 79 62 71 85
+151;Client;LES MENUS SERVICES;47 Rue de l'Orme;74600;SEYNOD;FR;jndor@les-menus-services.com;457418184
+152;Client;LES PLAFONDS;M. R. MONTAGNINI;73160;COGNIN;;;09 52 44 83 18
+153;Client;LES REVELATEURS;l'Asrtrolabe;74370;METZ-TESSY;FR;rejane.dupont@homisens.fr;
+154;Client;LIBER'ART;41 rue Vaugelas;74000;ANNECY;FR;contact@liber-art.fr;
+155;Client;LIFE CONSULTING;1 allée des Abeilles;69570;DARDILLY;FR;lgigandon@life-consulting.fr;
+156;Client;Li-tech;10 chemin des cerisiers;73100;AIX LES BAINS;FR;contact@li-tech.fr;
+158;Client;LUX MEDIA DIGITAL;342 RUE DE BEL AIR;73490;LA RAVOIRE;FR;compta@luxmediadigital.com;
+159;Client;M et Mme CHAPPERON;100 quai de la Rize;73000;CHAMBERY;;;04 79 33 13 53
+16;Client;ALPROM;129 chemin des bollonnes le villard;73290;LA MOTTE SERVOLEX;FR;alprom@alprom.fr;04 79 85 93 09
+160;Client;M. Alexandre SANSON;9, avenue des Barattes;74000;ANNECY;FR;alexandre.sanson@architecte-interieur-annecy.com;04 50 10 88 09
+161;Client;M. Augustin GAMBIEZ;AJ73-AGAM;73100;GRESY/AIX;;larbregenialogique@outlook.fr;
+162;Client;M. Axel PHELIPON;KABANAMUSIC;74410;DUINGT;FR;axel.phelipon@gmail.com;
+163;Client;M. Bernard FRANCONY;Marais du Chêne;73190;APREMONT;;;
+164;Client;M. Charles GANDY;Plan Martin;73670;ENTREMONT LE VIEUX;;;04 79 65 84 32
+165;Client;M. Denis PONCET;Route de Myans;73190;APREMONT;FR;d.poncet@outlook.com;
+166;Client;M. Didier  ORDENER;12 chemin de l'Alemande;73100;TRESSERVE;;;04 79 35 46 27
+167;Client;M. Didier BOISSON;22B, résidence des vignes;33370;YVRAC;FR;d.boisson@outlook.com;
+168;Client;M. Dominique BARATIER;19 Chemin du Trembley Dessous;73290;LA MOTTE SERVOLEX;FR;dominique@baratier.fr;
+169;Client;M. et Mme André HEDOUX;81 chemin des Parelles;73190;CHALLES LES EAUX;FR;andrechalles73@orange.fr;
+17;Client;AMACLE;163 route de Vernod;74330;POISY;FR;;
+170;Client;M. ET MME CHARRIERE;Marié Branche;73190;APREMONT;;;
+171;Client;M. et Mme Christian JOLY;205 route du Granier;73190;ST BALDOPH;FR;;
+172;Client;M. et Mme Christian RAIMOND;10 all des Quatre Vents;74940;ANNECY LE VIEUX;FR;familleraimond@wanadoo.fr;
+173;Client;M. et Mme Christophe GIRERD;163 rue de la Grange Perrot;73230;ST ALBAN LEYSSE;FR;;
+174;Client;SCI DU MEYRIEUX;CHEZ BONAMY HERVE;73100;BRISON ST INNOCENT;FR;contact@bonamyherve.com;
+175;Client;M. et Mme Gérard FLORENTIN;Chemin du Champet;73190;SAINT BALDOPH;FR;g.florentin2@outlook.com;
+176;Client;M. et Mme Guy GIRAUD;laval;7330;THUEYTS;;;
+178;Client;M. ET MME JACQUEMOND;37 chemin des berthets;73100;BRISON ST INNOCENT;FR;jdelaleu@outlook.fr;
+179;Client;M. ET MME Jean BOLLON;134 allée des Cimes;73000;CHAMBERY;FR;jean.bollon@orange.fr;
+18;Client;ARCA LINUM;30 Allée Collombert;73100;AIX LES BAINS;FR;olivier.fesard@arcalinum.fr;
+180;Client;M. et Mme Jean-Michel JOLY;156 allée de Bresse;73000;CHAMBERY;;;
+181;Client;M. ET MME LOUIS JANIN;117 montée Rabut - Bât. A - Horizon;73100;AIX LES BAINS;FR;louni.janin@wanadoo.fr;
+182;Client;M. ET MME Marcel PERENON;101 Av St Simond;73100;AIX LES BAINS;FR;marcel.perenon@gmail.com;06 83 34 90 85
+183;Client;M. ET MME MARCEL LONGE;rue d'Auteuil;73100;AIX LES BAINS;FR;nellylonge@live.fr;
+184;Client;M. Olivier GRANGE;749 route du Pontfer;73200;MERCURY;FR;olivier@oliviergrange.com;
+185;Client;M. et Mme Patrick BOISSON;311, rue Jean Jaurès;38920;CROLLES;;;04 76 90 17 43
+186;Client;M. ET Mme paul BOILIN;2 impasse de la Baye;73100;AIX LES BAINS;FR;a.boilin@outlook.com;
+187;Client;M. ET MME PHILIPPE MONTREUIL;257 chemin des moulins;73000;CHAMBERY;FR;;
+188;Client;M. ET MME Pierre GUDET;158 rue St Exupéry;73490;LA RAVOIRE;;;
+189;Client;M. et Mme R. GRANGEAT;La Crouettaz;73230;ST JEAN D'ARVEY;FR;jeanine.grangeat@outlook.fr;
+19;Client;SERVANT Jean-Claude;2416 Route du Villard;73290;LA MOTTE SERVOLEX;FR;jean-claude.servant@wanadoo.fr;04 79 33 88 88
+190;Client;M. et Mme ROSSETTO;La Roche;73190;CURIENNE;FR;rossettol@orange.fr;
+191;Client;M. et Mme Yves BONNEL;1 chemin des Combettes;73100;BRISON ST INNOCENT;FR;bonnelyv@orange.fr;
+192;Client;M. Fabien CHAIX;Jovinal;73160;VIMINES;FR;fchaix@outlook.fr;04 79 25 81 88
+193;Client;M. Francis VEUILLOTTE;33, rue Georges 1er;73100;AIX LES BAINS;FR;francis.veuillotte@live.com;04 79 35 77 07
+194;Client;M. Frédéric GIRAUD;21 Rue du vy Elevé;74940;ANNECY LE VIEUX;;;
+195;Client;M. Gilles BLAMBERT;91 chemin de la combe;73420;voglans;FR;gilles.blambert@gmail.com;
+196;Client;M. Guillaume VERHILLE;145, rue du Nivolet;73000;CHAMBERY;;;
+197;Client;M. Guy TOUZOT;16 chemin de la Biche;73000;BARBERAZ;FR;gtzt@wanadoo.fr;04 79 33 47 81
+198;Client;M. Henri OLLION;321 Chemin de Lachat;73190;ST JEOIRE PRIEURE;;;04 79 28 03 47
+199;Client;M. HUBERT MARTINIER;15 Bld de la Colonne;73000;CHAMBERY;FR;hmartinier@outlook.fr;04 79 72 28 40
+2;Client;ACE CREDIT;180 rue du Genevois;73000;CHAMBERY;FR;s.belliot@acecredit.fr;
+20;Client;ARTER;11 rue Jean Pierre VEYRAT;73000;CHAMBERY;FR;"p.colin@arter-agence.fr;n.bernard@arter-agence.fr";09 80 34 81 16
+200;Client;M. Jacques VANDENHENDE;406 route de Noiray;73290;LA MOTTE SERVOLEX;FR;jacques.vandenhende@wanadoo.fr;
+201;Client;M. James MARTIN COCHER;135 chemin des Carrières;74140;SCIEZ;;;
+202;Client;M. JEAN LOUIS TOUVET;119 chemin de l'observatoire;73100;TRESSERVE;;;
+203;Client;M. Jean Pierre GRANGEAT;713 route de la crouette;73230;ST JEAN D'ARVEY;;;
+204;Client;M. Joseph MAZAEFF;80 rue des arts;26160;PONT DE BARRET;FR;jm@azamat.fr;04 79 60 38 14
+206;Client;M. MANDAROUX Jean;439 Routes des Bricques;73420;MERY;FR;jean.mandaroux@wanadoo.fr;
+207;Client;M. Marcel GUITTAT;180 RUE DU GENEVOIS;73000;CHAMBERY;;;
+208;Client;M. Nicolas HERVE;1 chemin Notre Dame des Neiges;73100;MOUXY;;;
+209;Client;M. Philippe MAURAZ;1340 route des Monts;73110;LA ROCHETTE;;p.mauraz@wanadoo.fr;
+21;Client;ASAP;85 impasse de la Cote;74300;CHATILLON SUR CLUSES;FR;antoine.provazza@asap74.com;
+210;Client;M. René BONNAVION;130 chemin de Jacob;73000;CHAMBERY;FR;renebonnavion@yahoo.fr;04 79 96 29 52
+211;Client;M. René FLORET;chemin Bellier;73800;MYANS;FR;rene-olga.floret@orange.fr;04 79 28 11 23
+212;Client;M. Sébastien PUGET;607, ch. des Frasses;73190;ST JOIRE PRIEURE;;;
+213;Client;SB AMENAGEMENTS;M. Stéphane BRACCO;73230;VEREL PRAGONDRAN;FR;stephane.bracco@outlook.fr;
+214;Client;TERRE ALPINE;M. Stéphane GAIDIOZ;73800;LES MARCHES;FR;contact@terrealpine.fr;
+215;Client;M. STEPHANE PERENON;Av St Simond;73100;AIX LES BAINS;FR;s.perenon@mprenovation.fr;
+216;Client;M. Yvon DUBUY;8 rue de l'Eglise;44650;LEGE;FR;yvondubuy@outlook.fr;
+217;Client;M.et Mme Denis ROGER;390 CHEMIN DU COLOMBIER;73190;ST JEOIRE PRIEURE;;;
+218;Client;M.et Mme Michel TASSAN-CASER;125 Impasse Amédée Daille;73000;CHAMBERY;FR;archi@aum-archiurba.com;
+219;Client;MAHE SOLUTIONS;3 rue du champs de la vigne;74600;SEYNOD;FR;mahe.jf74@gmail.com;
+22;Client;Mme Danièle MOULIN;393 chemin des Bollons;73370;LE BOURGET DU LAC;FR;danie@daniemoulin.com;
+220;Client;MAIRIE D'APREMONT;Le Gaz;73190;APREMONT;FR;accueil@mairie-apremont.com;
+221;Client;MAIRIE DE BRISON ST INNOCENT;Parc Despine;73100;BRISON ST INNOCENT;FR;;
+222;Client;MAIRIE DE DRUMETTAZ CLARAFOND;102 route du chef lieu;73420;DRUMETTAZ CLARAFOND;FR;;04 79 63 64 00
+223;Client;MAIRIE DE VEREL;;73230;VEREL PRAGONDRAN;FR;;
+224;Client;MAIRIE ENTREMONT LE VIEUX;;73670;ENTREMONT LE VIEUX;FR;mairie@entremont-le-vieux.com;
+226;Client;Marc MADEZO;6 Rue Du Four Banal;63260;PERSIGNAT AUBIAT;FR;m.madezo54@outlook.fr;06 60 18 00 83
+227;Client;MARLEN;Chemin des Dreillis;73410;EPERSY;;;
+228;Client;MARLENE Constructions;Chemin des Dreillis;73410;EPERSY;;;
+229;Client;MARLIOZ OPTIQUE;2 rue Clément Ader;73100;AIX LES BAINS;;;
+23;Client;ATELIER DESIGN;440 route de la Touffiere;74370;ST MARTIN DE BELLEVUE;FR;contact@atelierdesignmasnada.com;
+230;Client;MARMOUSEZ ET FILS;30 impasse des Marais;73190;ST BALDOPH;FR;nathalie@marmousezetfils.com;04 79 34 56 14
+231;Client;MATERIEL MEDICAL DE CHARTREUSE;121 route des Echelles;38380;ST LAURENT DU PONT;FR;mmchartreuse@gmail.com;
+232;Client;Mathieu TAMBAU;MON CONSEILLER;74000;ANNECY;;mathieutambau@gmail.com;
+233;Client;MBL- Béatrice LOCKWOOD;38000 Route du Col de l'Epine;74210;MARLENS;;;
+234;Client;MDC;51 rue des Tilleuls;73460;FRONTENEX;FR;sa.sorim@wanadoo.fr;
+236;Client;Me Alexandra KAHN;3 rue Favre;73000;CHAMBERY;FR;contact@kahn-avocat.fr;
+237;Client;AK-AVOCAT;177 AVENUE DES MASSETTES;73190;CHALLES LES EAUX;FR;avocat-conseil@angeliquekiehn-avocat.fr;479859414
+238;Client;Me Annabelle GRAFFARD;JURIS OFFICE;79940;ANNECY;FR;a.graffard@huissiers-annecy.fr;04 58 10 15 35
+239;Client;Me Anne Lise ZAMMIT;23 Bd du Musée;73000;CHAMBERY;;;
+24;Client;ATELIER U.B.A;180 rue du Genevois;73000;CHAMBERY;;;09 51 36 82 20
+240;Client;Me Anthony TONA;88 rue Freizier;73000;CHAMBERY;FR;avocatanthonytona@gmail.com;
+241;Client;Me Caroline AVRILLON;2 avenue du pont Neuf;74960;ANNECY;FR;cabinet@avrillon-avocat.com;
+242;Client;Me Caroline POCARD;73, rue de la République;73200;ALBERTVILLE;FR;avocat@pocard.fr;04 79 39 92 12
+243;Client;Me Catherine ANXIONNAZ;Résidence Le Lac;73100;TRESSERVE;FR;ca@avocatanxionnaz.com;
+244;Client;Me Christelle PERILLAT;6 rue St Antoine;73000;CHAMBERY;FR;christelle@perillatavocat.fr;
+245;Client;Me Christophe LAURENT;15 place de la gare;73000;CHAMBERY;FR;;04.79.72.36.41
+246;Client;Me Claire MOLLARD;2 boulevard de la Roche du Roi;73100;AIX LES BAINS;FR;cmo@mollardavocate.fr;
+247;Client;Me François COCHET;10 Boulevard de la Colonne;73000;CHAMBERY;FR;f.cochet@cochetavocats.com;04 57 08 52 52
+248;Client;Me Georges PEDRO;15, place de la gare;73000;CHAMBERY;FR;compta.pedro@scm-avocats.fr;
+249;Client;Me Isabelle ROSADO;3, rue Favre;73000;CHAMBERY;FR;contact@rosado-avocat.fr;04 79 26 41 85
+25;Client;BENOCLE BRASSEUR OPTIQUE;330 rue de Geneve;73100;AIX LES BAINS;FR;dacbertnicolas@yahoo.fr;
+250;Client;Me Janick DUBY-DELANNOY;201 rue du Casino;73100;AIX LES BAINS;FR;jd@aix-dubyavocat.com;04 79 61 76 10
+251;Client;Me Jean-Charles PETIT;200, av Pierre Lanfrey;73000;CHAMBERY;FR;jeancharlespetit@outlook.com;04 79 70 48 40
+252;Client;Me Jessica RATTIER;2 place de Genève;73000;CHAMBERY;FR;contact@jrattier-avocats.fr;
+253;Client;Me Laure COMBAZ;Immeuble L'Oppidum;73190;CHALLES LES EAUX;FR;secretariat@cabinet-combaz.fr;
+254;Client;Me Lucie D'ALU;23 bd du musée;73000;CHAMBERY;FR;contact@daluavocat.com;09 81 42 58 94
+255;Client;Me Marie Laure MARTINEZ;15 place de la gare;73000;CHAMBERY;FR;ml.martinez@scm-avocats.fr;
+256;Client;Me Marie-Georges CHAPPAZ;6, rue St Antoine;73000;CHAMBERY;;;
+257;Client;Me Michel FILLARD;44 Fbg Reclus;73000;CHAMBERY;FR;cabinetfillard.avocat@gmail.com;
+258;Client;Me Muriel ARTIS;201 rue Casino;73100;AIX LES BAINS;FR;ma@artis-avocat.com;04 79 34 47 96
+259;Client;Me Nathalie GOUTTENOIRE;24 rue de la Paix;74000;ANNECY;FR;contact@gouttenoire-avocat.com;04 50 67 65 04
+26;Client;ATTITUDE OPTIQUE;1 avenue des Romains;74000;ANNECY;FR;contact@attitudeoptique.fr;
+260;Client;Me Pascale GABORIEAU;6 rue Favre;73000;CHAMBERY;FR;pascale.gaborieau@gmail.com;04 79 33 88 46
+261;Client;Me Pauline RIVIERE;200 Av Pierre Lanfrey;73000;CHAMBERY;;;04 79 85 92 34
+262;Client;Me SELINI EL-HEM;15 bd de la Colonne;73000;CHAMBERY;FR;ehs@selini.fr;04 79 60 24 60
+263;Client;Me Sonia VIALLETON;7 impasse des prairies;74940;ANNECY LE VIEUX;;;
+264;Client;Me Sophie JOSROLAND;17 rue des Cygnes;74940;ANNECY LE VIEUX;FR;avocat@josroland.fr;04 50 10 00 90
+265;Client;Me Vincent PARNY;3 Rue Favre;73000;CHAMBERY;FR;vincentparny.avocat@yahoo.fr;04 58 14 06 12
+266;Client;Me Virginie BARATON;2 rue Claude Martin;73000;CHAMBERY;FR;avocat@baraton.pro;
+267;Client;Melle Emmanuelle BOILIN;539 boulevard Garibaldi;73100;AIX LES BAINS;FR;eboilin@solvepatrimoine.fr;
+268;Client;Melle Rachel RABATEL;1 place de Poype;38460;CREMIEU;;;04 74 90 86 41
+269;Client;Melle Sylvie BUFFONE;49 RUE ST ROMAIN;69008;LYON 08;FR;sylvie.buffone@outlook.fr;668422044
+27;Client;AUGER CONSEIL ET FINANCE;89, rue Vieille Monnaie;73000;CHAMBERY;FR;auger@auger-conseil.fr;04 79 65 26 49
+270;Client;MIEUX VOIR;180 rue du Genevois;73000;CHAMBERY;FR;mieuxvoir@gmail.com;
+271;Client;Mme Aline FELIX-NAIX;Impasse de la Doria;73230;ST ALBAN LEYSSE;FR;aline.armand73@orange.fr;
+272;Client;Mme Anne marie SUAVET;6 Impasse des prés fleuris;73100;AIX LES BAINS;;annemarie.suavet@sfr.fr;
+273;Client;Mme Anne-Véronique PAOLILLO;;73000;CHAMBERY;;;
+274;Client;Mme Annie FOLCHER;63 allée des Mures;73370;LE BOURGET DU LAC;;;04 79 25 24 68
+275;Client;Mme Béatrice MOULIN;134 Lot Tour Rapettes;1390;TRAMOYES;FR;beamoulin@outlook.com;04 72 26 58 64
+276;Client;Mme Béatrice SORNICLE;23 Boulvevard du Musée;73000;CHAMBERY;FR;beatrice.sornicle@wanadoo.fr;
+277;Client;Mme BOZON;15 place du 8 mai 45;73000;CHAMBERY;;;
+278;Client;Mme Brigitte PIOT;5 Bd du Théâtre;73000;CHAMBERY;;;
+279;Client;Mme Carole  SAIDI;rue de la guicharde;69360;COMMUNAY;;;
+28;Client;AUM ARCHITECTURE;68 rue Sommeiller;73000;CHAMBERY;FR;m.chabord@aum-archiurba.com;04 79 33 75 10
+280;Client;Mme Catherine COUPUT;435 route des villards;74290;ALEX;;;
+281;Client;Mme Catherine GERMAIN;53, rue du Midi;69960;CORBAS;FR;agence.cgai@gmail.com;
+282;Client;Mme Chantal SALLETTAZ;1 passage Honore d'Urfé;73000;CHAMBERY;FR;chantal.sallettaz@outlook.fr;04 79 44 17 92
+283;Client;Mme Chantal SUISSE;chemin de la Grande Vigne;73160;VIMINES;FR;c.suisse@wanadoo.fr;
+284;Client;Mme Christiane MATHIEU;350 ALLEE DE L'OREE DU LAC;73420;VOGLANS;FR;mathieurobert@orange.fr;04 79 52 02 21
+285;Client;Mme Christine BRASSEUR-JEANNIN;32 chemin du lac;73100;TRESSERVE;;;
+286;Client;Mme Christine VERGUET;110 bis, ch. l'Etigny;73000;SONNAZ;FR;;
+287;Client;Mme Fanny GAMBIEZ;477 Rue du Mâconnais;73000;CHAMBERY;;;04 79 72 41 82
+288;Client;Mme Frédérique BODART;;73000;CHAMBERY;FR;fefesavoie@hotmail.fr;
+289;Client;Mme Gisèle PHILIPPE;64 chemin des Cortils;73000;SONNAZ;;;04 79 72 01 27
+29;Client;AUXICAP;10, rue des Peupliers;74950;SCIONZIER;FR;dboutet@auxicap.com;
+290;Client;Mme Huguette JOLY;154 rue des cevennes;73000;CHAMBERY;FR;huguette.joly02@orange.fr;479282442
+291;Client;Mme HELENE LIVINGSTONE;128 route des Jacquins;73170;BILLIEME;FR;helene.livingstone@gmail.com;
+292;Client;Mme Isabelle CHRISTIN;Résidence L'Orée du Bois;73100;AIX LES BAINS;FR;christin.isa@wanadoo.fr;
+293;Client;Mme Jacqueline BUFFET;523 route de la Chartreuse;73000;SONNAZ;FR;marcel-buffet@wanadoo.fr;
+294;Client;Mme Jocelyne BOLLON;19 Square d'Orgeval;73000;CHAMBERY;FR;jfbollon@outlook.fr;
+295;Client;Mme Laury BATTISTON;90 Rue du Grand Clos;73230;BARBY;FR;laury.battiston.ai@gmail.com;04 79 65 20 82
+296;Client;Mme Marie BUCHALET;71 rue du Mollard;73000;CHAMBERY;;;
+297;Client;Mme Marie CHAFFARDON;140 BOULEVARD ROBERT BARRIER;73100;AIX LES BAINS;FR;mariechaffardon@gmail.com;
+298;Client;Mme Marie Claude REGAIRAZ;5 chemin de Milly;73100;TRESSERVE;FR;mc.regairaz@roualdes.com;
+299;Client;Mme Marilyne DEMEURE;550 Route de Joudin;73240;ST GENIX LES VILLAGES;FR;maridemeure@outlook.fr;
+3;Client;AGENCE CENTURY 21;av, Charles de Gaulle;73100;AIX LES BAINS;;;
+30;Client;AVEC FINANCEMENT;109 place Charles de Gaulle;74300;CLUSES;FR;admin@lepereboss.com;
+300;Client;Mme Mireille TESCARI;5 allée de la marjolaine;74940;ANNECY LE VIEUX;;;
+301;Client;KINE BEAUFORT;MME BRAGHINI NADEGE;73270;BEAUFORT SUR DORON;FR;nadege.braghini@gmail.com;06 81 45 79 95
+302;Client;Mme Nadine BUISSON;74 Rue de Yenne;1300;PARVES ET NATTAGES;FR;demande@nadinebuisson.com;479755839
+303;Client;Mme Nadine MACARIOS;10 BD DE PARIS;73100;AIX LES BAINS;FR;nadine.macarios@outlook.com;
+304;Client;Mme Nicole LANGEARD;4 rue Neuve;50660;MONTCHATON;FR;nicole.langeard@wanadoo.fr;
+305;Client;Mme Odette PELLETIER;159 rue de l'iseran;73000;CHAMBERY;;;04 79 62 75 09
+306;Client;Mme Patricia RENOTON;164 rue Chauvets;73100;GRESY SUR AIX;;;
+307;Client;Mme Raymonde FREULON;227, route des Clarines;73190;SAINT BALDOPH;FR;freulon.p@wanadoo.fr;
+308;Client;Mme Stéphanie BATTISTON;290 Avenue de Savoie - apt n°19;73800;MONTMELIAN;FR;stephanie.battiston@orange.fr;04 79 65 20 82
+309;Client;MME Stéphanie PROUST;;73310;CHANAZ;;;
+31;Client;AXA MIEGE-VULLIET-ORENGO;Robert-Xavier ORENGO;74960;CRAN GEVRIER;FR;;
+310;Client;MONT-BLANC KAPITAL;8 rue du Vy-Elevé;74940;ANNECY LE VIEUX;FR;gregory@montblanckapital.com;
+311;Client;MOTTARET SPORT - YOUNG MOUNTAIN;Galerie des Cimes;73550;MERIBEL LES ALLUES;FR;mottaretsports@gmail.com;09 65 27 67 01
+312;Client;MP LOISIRS;M. et Mme MONOD;34110;FRONTIGNAN;FR;mploisirs@outlook.fr;619413670
+313;Client;MP RENOVATION;1151 route de l'Albannais;73100;GRESY SUR AIX;FR;m.rossat@mprenovation.fr;04 79 88 05 77
+314;Client;Mr Patrick MAUBERGER;985, route de Bois;74150;BLOYE;;;04.79.81.72.07
+315;Client;Mylène BESSON;;73670;ENTREMONT LE VIEUX;;mymybesson@yahoo.fr;
+316;Client;N2S - CHANETT NETTOYAGE;15 Rue de la Curdy;74150;RUMILLY;FR;info@chanett.fr;450014863
+317;Client;NADIA BEZZI;68 rue Carnot;74000;ANNECY;FR;n.bezzi@bezzi-avocat.com;04 58 14 04 83
+318;Client;NAHOMA;524 route d'Albertville;74320;SEVRIER;FR;nadege@nahoma-interior.fr;
+319;Client;NETCO SERVICES;180 rue du Genevois;73000;CHAMBERY;FR;;
+32;Client;AXE ORTHO;1 place de la libération;73000;CHAMBERY;;;
+320;Client;NEUVIEME AVENUE;38 RUE DES MARTYRS;75009;PARIS;FR;cbon@laforet.com;
+321;Client;NEUVIEME AVENUE GESTION NAG;38 RUE DES MARTYRS;75009;PARIS;FR;ksaidoun@laforet.com;
+322;Client;SOLUHOME - Nicolas BABOZ;474 route d'Epersy;73100;GRESY/AIX;FR;nicolas.baboz@soluhome.fr;
+323;Client;NOVAL ELEC;288 rue des marais;73000;CHAMBERY;FR;comptabilite@novalelec.fr;
+324;Client;GROUPE O'CLAIRE;30 bis rue Gustave Eiffel;74600;ANNECY;FR;nicolas.schneiderboucher@o-claire.fr;
+325;Client;SHIVA - Olivier NICOD;13 Avenue de la République;74960;CRAN-GEVRIER;FR;olivier.nicod@shiva.fr;04 50 46 55 10
+326;Client;Olivier ROGER;3 Chemin des Combettes;73100;BRISON ST INNOCENT;FR;olivierroger@outlook.com;
+327;Client;OPERA PROMOTION - SOPRANO;68 Avenue de la Mavéria;74940;ANNECY LE VIEUX;FR;fabien.guinet@operapromotion.fr;
+328;Client;ORCA FINANCE;117 Allée des Erables;73420;DRUMETTZ CLRAFOND;FR;cabinet@orcafinance.fr;
+329;Client;PAR AMOUR DU VIN;292 RUE DE L'ETRIVAZ;74370;ANNECY;FR;contact@paramourduvin.com;
+33;Client;AXE ORTHO NUMERIQUE;1 place de la libération;73000;CHAMBERY;FR;hubert.droy@orange.fr;
+330;Client;Pascal BERTHOLIER;91 route de Cran-Gevrier;74650;CHAVANOD;FR;p.bertholier@outlook.fr;
+331;Client;Pascal SEIDEL;134 rue Reignier;73190;CHALLES LES EAUX;FR;sp@pascalseidel.fr;04 79 72 97 39
+332;Client;Patrice et Christine SAUVAGE;;74000;ANNECY;;;
+333;Client;Patrick ROUX;;73700;BOURG ST MAURICE;FR;"patrick.roux2020@outlook.fr;alexandreroux73@wanadoo.fr";
+334;Client;NORAZ CONCEPT;Paul NORAZ;73230;SAINT ALBAN LEYSSE;FR;norazconcept@gmail.com;
+335;Client;PERF'HOMME;30 allée du lac d'Aiguebellette;73370;LE BOURGET DU LAC;;;
+336;Client;PHILEAS WORLD ANNECY;2 rue Louis Armand;74000;ANNECY;FR;celine.ward@phileas-world.fr;
+337;Client;PHILEAS WORLD LA ROCHE/FORON;5972 route de Thorens;74800;LA ROCHE SUR FORON;FR;mathieu.sari@phileas-world.fr;
+338;Client;Philippe BELLIOT;5 bis chemin de la Ramaude;73100;AIX LES BAINS;FR;ph.bel@club-internet.fr;
+339;Client;PICON SA;290 chemin du clapet;73490;LA RAVOIRE;FR;;
+34;Client;AXE ORTHO SMILERS LAB;1place de la libération;73000;CHAMBERY;FR;;
+340;Client;PLATINIUM FORMATION;24 rue Domer;69007;LYON;FR;cmonnier@platiniumformation.com;04 37 28 09 10
+341;Client;PME OPTI+;Christophe CHARBONNIER;74700;CORDON;;;
+342;Client;Mme Nadine ROISIN;13 route de provins;74940;ANNECY LE VIEUX;FR;nadineroisin@gmail.com;
+343;Client;PROJTECH DECO;ZA de PRARIAND;74120;MEGEVE;FR;m.seigneret@projtech-realisation.com;09 83 79 30 79
+344;Client;PROJTECH REALISATION;ZA de PRARIAND;74120;MEGEVE;FR;compta@projtech-realisation.com;983793079
+345;Client;PUGET PARTICIPATION;54 route de Paris;73100;BRISON ST INNOCENT;FR;contact@cellifold.com;
+346;Client;PUISSANT FRERES;;38380;ST PIERRE D'ENTREMONT;FR;puissant.freres@gmail.com;
+347;Client;R'CAM;209, rue Archiméde;73490;LA RAVOIRE;FR;favetta.corine@rcam.fr;04 79 70 24 59
+348;Client;Régis BEYSSAC;1627 Route d'Apremont;73490;LA RAVOIRE;;;
+349;Client;REHABITAT;11 rue du Centenaire;74960;CRAN GEVRIER;FR;emmanuel.garlaschelli@gmail.com;
+35;Client;AZAMAT SARL;80 RUE DES ARTS;26160;PONT DE BARRET;FR;jm@azamat.fr;
+350;Client;RESTAURANT LE BEAU SOLEIL;6 quai de L'Isle;74000;ANNECY;FR;contact@lebeausoleil.fr;
+351;Client;RM SAVOIE;7 rue Blaise Pascal;74600;SEYNOD;FR;tphilippe@rmsavoie.fr;
+352;Client;RUBICUBE;4 TER CHEMIN DU PERIL;74290;VEYRIER DU LAC;;mumuration74@gmail.com;
+353;Client;S.P.E.A (LA SAVOISIENNE DE PRODUCTION ELECTRIQUE AUTONOME);chez Mme Karine RIGON;73100;PUGNY CHATENOD;FR;centrale.spea@outlook.com;
+354;Client;S2C;1100 RTE D'OPTEVOZ;38510;COURTENAY;;;
+355;Client;SAGESSE;804 Avenue Ambroise Croizat;38920;CROLLES;FR;boisson@sagesse.fr;04.76.33.13.60
+356;Client;SARL AZIMUT SOLAIRE;180 rue du Genevois;73000;CHAMBERY;FR;azimut-solaire@azimut-solaire.fr;04 79 85 02 57
+357;Client;SARL CEIZE;119 chemin de l'observatoire;73100;TRESSERVE;FR;cdfi16@outlook.fr;
+358;Client;SARL CIMELAC;MERCATO DE L'EMPLOI;74940;ANNECY;FR;hubert.perrier@mercato-emploi.com;
+359;Client;SARL CUP OFTEE;10 passage du Vatican;74220;LA CLUSAZ;FR;lemulligan74@hotmail.com;
+36;Client;B.E.G.C.;8 rue Neuve;50660;ORVAL SUR SIENNE;FR;begc@begc.biz;
+360;Client;HYPNOSE RENAISSANCE;Valérie GUALA-APRILE;74000;ANNECY;FR;valerie.montrion@gmail.com;
+361;Client;SARL GERO;920 CHEMIN DES VARANDES;73110;ARVILLARD;FR;sarlgero@outlook.com;
+362;Client;SARL LAVOREL;100 chemin des Près Bouvaux;74600;ANNECY;FR;contact@lavorel-maintenance.com;
+363;Client;SARL RESSOURCES;Marie SOURD;73370;LE BOURGET DU LAC;FR;m.sourd@ressources-ec.fr;
+364;Client;SARL SIGNOLETTE;1 rue des Nonnes;73000;CHAMBERY;FR;ls@lherboristory.com;
+365;Client;SAS ATALANTE;22 Rue Delandine;69002;LYON;FR;audecasasole@gmail.com;
+366;Client;SAS J-Z;26,avenue du Petit Port;73100;AIX LES BAINS;FR;contact@bbsformation.com;
+367;Client;MONTAGNINI AMENAGEMENTS INTERIEUR - M.A.I.;169 Route de Yenne;1300;NATTAGES PARVES;FR;info@mai73.fr;
+368;Client;SAS MAGMA;ZAC fontaine du Gue;73550;LES ALLUES;FR;jerome.salez@magma-sas.com;
+369;Client;SAVEURS D'ICI & D'AILLEURS;7 place Clémenceau;73100;AIX LES BAINS;FR;isabel@saveurs-dici.fr;
+37;Client;B7 ET LOAM;19 Rue de Boigne;73000;CHAMBERY;FR;;
+370;Client;SAVOIE COUVERTURE BARDAGE;Savoie Hexapole;74420;MERY;FR;scb@scb73.fr;04 79 63 49 67
+371;Client;SCANTECH;108 AVENUE DU LAC LEMAN ZAC 2;73290;LA MOTTE SERVOLEX;FR;factures.stfr@scantech.fr;04 79 25 05 25
+372;Client;SCI H ET D NORSE;Chez Mme K. RIGON;73100;PUGNY CHATENOD;;;
+373;Client;SCI SARALU;M. et Mme CAVIN;73420;LE VIVIERS DU LAC;FR;mariek20@outlook.com;
+374;Client;SCM QUATUOR;15 place de la gare;73000;CHAMBERY;FR;compta.pedro@scm-avocats.fr;04 79 85 15 87
+375;Client;SCM ROSADO/KAHN/PARNY;3 rue Favre;73000;CHAMBERY;;;
+376;Client;SCP BESSAULT MADJERI ST ANDRE;200, av. Maréchal Leclerc;73000;CHAMBERY;FR;sami@scp-bessault-madjeri.com;04 79 68 60 90
+377;Client;SCP GIRARD MADOUX;20 rue Jean Pierre Veyrat;73000;CHAMBERY;FR;scpgirardmadoux@avocats-chambery.com;
+378;Client;Sébastien THOMAS;233 route de Dressy;73410;ALBENS;;;
+379;Client;SECAUDIT - Guillaume BERARD;Guillaume BERARD;74000;ANNECY;FR;guillaume.berard@secaudit.fr;
+38;Client;BAMBOO;381 route des Rigoles;74370;ARGONAY;FR;sbonnafe@hotmail.com;
+380;Client;SECOBA;30, allée Albert Sylvestre;73000;CHAMBERY;FR;secoba@secoba.fr;04 79 68 27 60
+381;Client;SI2C - Patrick BOISSON;804 av A Coizat;38920;CROLLES;;;04 76 33 13 60
+382;Client;SOCIETE LE LOU;168 avenue du Golf;73420;DRUMETTAZ CLARAFOND;FR;bducrue@o-top.net;04 79 61 73 44
+383;Client;SOGOCOM;356 route de Chavanne;74330;POISY;FR;sophie@sogocom.fr;
+384;Client;SOLA;8bis route des Creuses;74960;CRAN-GEVRIER;FR;m.davillerd@sola74.fr;04 50 57 82 22
+385;Client;SOLIDARITE POUR REUSSIR;4 bis avenue du Pont de Tasset;74960;CRAN GEVRIER;;;04 50 44 00 70
+386;Client;SOLVE PATRIMOINE;301 Rue Jacques Cellier;73100;GRESY SUR AIX;FR;compta@solvepatrimoine.fr;
+387;Client;SPORT BIKE TECH;24 Route de la Godette;74540;ALLEVES;;;
+388;Client;SR DAUPHINE SAVOIE;233, rue de la Curiaz;73290;LA MOTTE SERVOLEX;;;
+389;Client;SSP;134 impasse Terraillet;73190;SAINT BALDOPH;FR;ssp.laravoire@orange.fr;04 79 65 03 53
+39;Client;BENOIST IMMOBILIER;CENTURY 21;73000;CHAMBERY;FR;benoist.immobilier@century21.fr;04 79 72 41 68
+390;Client;ST COM;180 rue du Genevois;73000;CHAMBERY;FR;compta.stcom@it360.fr;
+391;Client;ALPCEM INGENIERIE;route du lac;73370;LE BOURGET DU LAC;FR;alpcem@orange.fr;06 64 16 65 87
+392;Client;STEPHAN CUZIN;;73000;CHAMBERY;;;
+393;Client;Stéphanie BAILLARGEAU;;73190;ST JEOIRE PRIEURE;;3sl.bail@orange.fr;
+394;Client;STOR' AIX;26 avenue Victoria;73100;AIX LES BAINS;FR;direction@storaix.com;04 79 61 24 08
+395;Client;TALENTISSIM;8 avenue de Novel;74000;ANNECY;;;
+396;Client;TGF SERVICES;53 rue Mozart;38490;ST ANDRE LE GAZ;FR;tgf.services@orange.fr;04 56 29 62 81
+397;Client;Thierry GENAND;291 rue des gentianes;74800;LA ROCHE SUR FORON;FR;studio.tgenand@orange.fr;
+398;Client;Thierry JOUSSET;2 rue du Roitelets;57690;CREHANGE;;;
+399;Client;TRANSFLEX;15 avenue des vieux moulins;74000;ANNECY;FR;Transflex74@gmail.com;
+4;Client;AGENCE CITIZEN 15;21 avenue Félix Faure;75015;PARIS;FR;cbon@laforet.com;01 53 78 04 04
+40;Client;BL CONSEIL;67 Av des Massettes;73190;CHALLES LES EAUX;FR;bernard.laurent.conseil@outlook.fr;
+400;Client;TUBES TECHNOLOGIES;31, rue du Traite de Rome;69780;MIONS;FR;a.mamarot@tubes-technologies.com;
+401;Client;USAV ANNECY LE VIEUX;6 rue du Pré Vernet;74940;ANNECY LE VIEUX;;;
+402;Client;Valérie CLODIC;520 route des trembles;74370;FILLIERE;;;
+403;Client;VANESSART STUDIO;8 aveue de Thones;74000;ANNECY;FR;vanessartstudio@outlook.com;
+404;Client;VILLA CAROLINE;624 ROUTE D'ANNECY;74410;DUINGT;FR; compta@montagnettes.com;
+405;Client;VMG;393 rue pre bonguin;1300;CHAZEY BONS;FR;jm.vivier@vmgconsult.fr;
+406;Client;Xavier SALERIO;39 chemin du biolley;73100;BRISON ST INNOCENT;FR;xs@xaviersalerio.fr;
+407;Client;YMCAR - YOOLIZ;11 rue du Levant;74960;ANNECY;FR;yvesmariem@yooliz.com;
+408;Client;Yves DEGRAVEL ORGANISATION;42 chemin de Vérans;73100;BRISON ST INNOCENT;FR;organisation@degravel.com;06 07 33 67 49
+41;Client;BLINKA VISION;381 route des Rigoles;74370;ARGONAY;FR;hello@blinka.fr;
+42;Client;BMB FACTORY;M. Bernard BOUILLANNE;74600;QUINTAL;FR;bmb@bmbfactory.eu;
+43;Client;BOCHET STEPHANE EURL;LES COVETS;73190;CURIENNE;;;
+44;Client;BONAMY'S HERVE SAS;ZA chemin des Combettes;73100;BRISON ST INNOCENT;FR;compta@bonamyherve.com;
+45;Client;BOULANGERIE ANGE;Christophe CHOMIER;74330;EPAGNY METZ-TESSY;FR;cchomier@gmail.com;
+46;Client;BOUTET MANAGEMENT;10 rue des peupliers;74950;SCIONZIER;FR;dominique.boutet@boutet-management.com;
+47;Client;BUFFET FRERES ENERGIE;523 rue de la Chartreuse;73000;SONNAZ;FR;contact@buffetfreres.fr;04/79/70/84/12
+48;Client;C2E;BUSINESS CORNER - BAT A;73190;CHALLES LES EAUX;FR;celine@groupe-erm.fr;04 79 75 22 70
+49;Client;C3A;BUSINESS CORNER - BAT A;73190;CHALLES LES EAUX;FR;celine@groupe-erm.fr;04 79 75 22 70
+5;Client;AGENCE FRANCOISE THOMAS;8 rue du commerce;73100;AIX LES BAINS;FR;ft@francoisethomas.com;
+50;Client;C3M;BUSINESS CORNER - BAT A;73190;CHALLES LES EAUX;FR;celine@groupe-erm.fr;04 79 75 22 70
+52;Client;CABINET DE Me Alexandre BIZIEN;68 rue freizier;73000;CHAMBERY;FR;alexandrebizien@bizienavocats.fr;479688287
+53;Client;CABINET DR DELEPLANCQUE;L'OPPIDUM;73190;CHALLES LES EAUX;FR;deleplancque@outlook.fr;
+54;Client;CABINET GRAILLAT;50 Av du Comte Vert;73000;CHAMBERY;FR;cecile@cabinet.graillat.fr;479690131
+55;Client;CABINET JEAN DES GARETS - GEHOM;6 av du Pont Neuf;74960;CRAN GEVRIER;FR;j@gehom.fr;
+56;Client;CABINET Me CATALDI;88, rue Freizier;73000;CHAMBERY;FR;avocatdanielcataldi@gmail.com;
+57;Client;CABINET Me VERRON Frédéric;2 place de Genève;73000;CHAMBERY;FR;;04 79 96 08 03
+58;Client;CACCIATORE EXPERTISE;Le Nymphéa;73000;CHAMBERY;FR;j.selva@cacciatore-expertise.fr;04 79 98 27 25
+59;Client;CAFETERIA 'LES ELEPHANTS';1 rue Claude MARTIN;73000;CHAMBERY;;;
+6;Client;AGENCE LAFORET - SOURCE IMMO;46 rue de Genève;73100;AIX LES BAINS;FR;claurent@laforet.com;04 79 35 79 79
+60;Client;CANTINE SAVOYARDE;26 Fbg NEZIN;73000;CHAMBERY;FR;directeur@cantinesavoyarde.fr;
+61;Client;CARROSSERIE VIBERT;62 ROUTE DE LA PEISSE;73420;DRUMETTAZ CLARAFOND;FR;d.vibert@carrosserievibert.fr;
+62;Client;LE MAITRE D'OEUVRE;Mussat;73190;APREMONT;;"secretariat@domo-savoie.fr;eric@domo-contractant.fr";
+63;Client;CCMS;81 Chemin des Prés;73490;LA RAVOIRE;FR;cuerqccms@orange.fr;04 79 70 29 91
+64;Client;CD ENSEIGNES;244 rue de la Chavanne;74330;POISY;FR;cd.enseignes@orange.fr;04 50 46 37 90
+65;Client;CDA CONSULTANTS;20 Route des Fiches;1310;CONFRANCON;;;
+66;Client;CELLIFOLD;441 chemin des Moliers;73100;TREVIGNIN;FR;;
+67;Client;CESII;Le Polygone 1;73000;CHAMBERY;FR;;
+68;Client;MME GODYN LUDIVINE;1890 ROUTE DU ROCHER;73340;LA MOTTE EN BAUGES;FR;ludivine.godyn@cordee-patrimoine.com;
+69;Client;CHATEAU DU DONJON;1136 route du chef Lieu;73420;DRUMETTAZ CLARAFOND;FR;jmcroiset.donjon@gmail.com;
+7;Client;AGENCE LAFORET MOGADOR;38 rue de Clichy;75009;PARIS;FR;ebelliot@laforet.com;01 53 25 00 10
+70;Client;CHEVALIER CONSEIL ET DEVELOPPEMENT;237 Impasse du Bouclet;73700;BOURG ST MAURICE;FR;bureau@chevalier-cetd.com;
+71;Client;M. et Mme LEAUTEY;RESIDENCE EXCEPTION;73100;AIX LES BAINS;FR;f.leautey@outlook.com;
+72;Client;Colette FOLLIET;60 rue du Dr Blain;73290;LA MOTTE SERVOLEX;FR;procedim@procedim.com;
+73;Client;CO-MADE;6 bd Decouz;74000;ANNECY;FR;pierre@co-made.fr;
+74;Client;COMPAGNIE DES SORBIERS;196 Rue Du Colonel Bachetta;73420;VIVIERS DU LAC;FR;nadine@alainperrier.com;04 79 54 54 53
+75;Client;COM'UP/SAS B&C ASSOCIES;CHEZ AUDREX;74650;CHAVANOD;FR;compta@comupdev.fr;
+77;Client;Corinne ROGER;Immeuble le Concorde;73490;LA RAVOIRE;;;
+78;Client;COVER EVENT;303 rue du Larzac;73000;CHAMBERY;FR;compta@coverevent.fr;
+79;Client;CPS CONSEIL;75 rue de la Petite Eau;73290;LA MOTTE SERVOLEX;FR;info@cps-conseil.fr;04 79 26 41 41
+8;Client;AGENCE SIXTY SIX;;74000;ANNECY;FR;jacques.petit@sixty-six.fr;
+80;Client;CREAGRAM;180 rue du Genevois;73000;CHAMBERY;;;04 79 85 51 96
+81;Client;CUISINE INOVA BLUE MOUNTAIN;59 route d'Annecy;74370;PRINGY;FR;jc.honorat@bluemountain74.com;04 50 27 06 78
+82;Client;CYPALL;29 rue Cartier Bresson;93500;PANTIN;FR;lc@cypall.fr;
+83;Client;DE MATTEIS AGENCEMENT;65 rue de la Chavanne;73490;LA RAVOIRE;FR;contact@dematteis.fr;
+84;Client;DEBOST ELECTRICITE;28 rue de l'Amoudru;73220;AITON;FR;comptabilite@debostelectricite.com;479751593
+85;Client;DECILAB;63, rue du Pré Pignon;73000;CHAMBERY;FR;marie-france.cuzin@decilab.com;04 79 68 99 54
+86;Client;DECLIC MANAGEMENT;482 Routes Des Quarts;74320;SEVRIER;FR;a.renand@declicmanagement.com;
+87;Client;Delphine UGUEN;11 rue Jean Pierre VEYRAT;73000;CHAMBERY;;;
+88;Client;DEMENAGEURS BRETONS;563 fbg Montmélian;73000;CHAMBERY;FR;mp.roulier@adt7374.com;
+89;Client;DH SOLUTIONS;20 chemin des Burnets;73100;AIX LES BAINS;FR;;
+9;Client;AIX OPTIONS;15, rue Henri Menabrea;73100;AIX LES BAINS;FR;marie-ange@aix-options.fr;04 79 61 18 94
+90;Client;DIAGAMTER;19 chemin de la prairie;74000;ANNECY;FR;paul.danjou@diagamter.com;
+91;Client;Dominique et Bernard GROS;Route DES Briques;73155;MERY;;bernardgros-thomascook@icor.fr;
+92;Client;DOXAPLUS;180 RUE DU GENEVOIS;73000;CHAMBERY;FR;caracil@doxaplus.fr;04 79 70 13 58
+93;Client;Dr Adnane DEBABECHE;60 route des Gorges du Sierroz;73100;GRESY SUR AIX;FR;adebabeche@outlook.fr;09 81 79 15 35
+94;Client;DRUMETTAZ CONTROLE TECHNIQUE;295, Allée du Beniet;73420;DRUMETTAZ CLARAFOND;;;04 79 34 25 35
+96;Client;E6 CONSULTING SARL;Valérie ECKOFF;74000;ANNECY;;;
+97;Client;EDITEC SARL;48 rue des Grives;38920;CROLLES;FR;celine@groupe-erm.fr;04 76 24 13 70
+98;Client;Ent. Georges GOMES DOS SANTOS;Le Grand Chenevey;73670;ST PIERRE D'ENTREMONT;FR;gomes-dos-santos.georges@orange.fr;
+99;Client;ENTREPRISE CARTIER;221, Route de Vallières;74150;HAUTEVILLE SUR FIER;FR;contact@entreprise-cartier.fr;
+ADSOFT;Client;ADSOFTWARE;109 place Charles de Gaulle;74300;CLUSES;FR;compta@adsoftware.fr;450894850
+ALAINPIERSON;Client;Alain PIERSON;2351 route du Col du Petit St Bernard;73700;SEEZ;FR;alaindepompey@gmail.com;
+ALPESSYNDIC;Client;ALPES SYNDIC;778 route d’Aix;73420;VIVIERS DU LAC;FR;;
+ARCHESYCOMORE;Client;L'ARCHE SYCOMORE;74 Rue Costa de Beauregard;73490;LA RAVOIRE;FR;services-generaux@arche-sycomore.org;
+ATF;Client;ATF INDUSTRIE;Aéroparc de Fontaine;90150;FONTAINE;FR;pierre.barberet@atf-industrie.com;
+AUFILUR;Client;AUFILURBA;287 Route des Creuses;74600;SEYNOD;FR;aufilurba@gmail.com;
+AUGERPERSO;Client;M. Aymeric AUGER;;73190;ST JEOIRE PRIEURE;FR;auger@auger-conseil.fr;
+AVRILLIERBETTY;Client;Mme Betty FERRIER;Av du Grand Port;73100;AIX LES BAINS;FR;bettyferrier59@gmail.com;
+B7DISTRI;Client;B7 DISTRIBUTION;19 Rue de Boigne;73000;CHAMBERY;FR;B7christophe@outlook.fr;
+BESSAULTD;Client;Me Danièle BESSAULT;200 avenue maréchal Leclerc;73000;CHAMBERY;FR;daniele.bessault@wanadoo.fr;
+BLANCHARDM;Client;Mme Anne-Marguerite BLANCHARD;20 ROUTE DU GRANIER;73190;ST BALDOPH;FR;am.blanchard1@hotmail.fr;
+BLEBOURG;Client;M. Bernard LEBOURG;241 chemin du Brouillet;74320;SEVRIER;FR;bernard.lebourg@orange.fr;
+BROULIER;Client;BROAUDIT - Benjamin ROULIER;203, place de l'Eglise;74330;POISY;FR;benjamin.roulier@broaudit.fr;
+BUFFONEMS;Client;M. et Mme Michel BUFFONE;Les Eymards;7330;THUEYTS;FR;;
+BVETTIER;Client;Bernard VETTIER;1 TER rue des cols vert;74940;ANNECY LE VIEUX;FR;;
+CAPBERTHAULT;Client;Mme Capucine BERTHAULT;109 Chemin du Port de Vivier Verthier;74210;DOUSSARD;FR;capucine@rubicube.archi;
+CAPEA;Client;CAPEA;;74330;EPAGNY METZ TESSY;FR;cchomier@gmail.com;
+CAPISEIS;Client;CAPISEIS;7 Rue Blaise Pascal;74000;ANNECY;FR;tphilippe@capiseis.com;
+CAPPELLARO;Client;EURL CAPPELLARO;155 Route de Grésy;73410;ENTRELACS;FR;cappellaro.artisanat@gmail.com;
+CDARTUS;Prospect;L'INTERMAIDE - Camille DARTUS;5 rue de l'industrie;74000;ANNECY;FR;Camille.dartus@lintermaide.com;
+CGCONSULT;Client;CG CONSULT;595 Rue des gites;38660;LE TOUVET;FR;cgconsultfrance@gmail.com;
+CL00001;Client;IMMOVALLEE GESTION;13 PLACE MONGE;73000;CHAMBERY;FR;sebastien.adamo@century21.fr;480805419
+CL00002;Client;DEGRANGE ROGER;1296 Route des catons;73370;LE BOURGET DU LAC;FR;fam.degrange@live.fr;479252019
+CL00003;Client;ABELE FRANCESCHI CAMILLE;2 Avenue du Pont Neuf;74000;ANNECY;FR;contact@abelefranceschi-avocat.com;
+COLLOMBF;Client;Mme Florence COLLOMB;1 allée des Abeilles;69570;DARDILLY;FR;;
+COUTIN;Client;SCP COUTIN;2 rue Bugeaud;73200;ALBERTVILLE;FR;coutin.avocat@orange.fr;
+CRETONJAC;Client;Mme Alice CRETON;25 Route du Bas Guillot;73330;DOMESSIN;FR;Jac.creton@outlook.fr;
+CRYOADV;Client;CRYO ADVANCE;6 Rue Jean-Louis Grivaz;74000;ANNECY;FR;annecy.cryoadvance@gmail.com;
+CTI-A;Client;CTI & A;199 chemin de la plaine;73220;AITON;FR;taner.salkim@ctia-tuyauterie.fr;
+DELPHIN;Client;M. ET MME DELPHIN-POULAT;;73100;AIX LES BAINS;FR;marieange.delphinpoulat@outlook.fr;
+DESANDRE;Client;M. PIERRE DESANDRE;505 rue des Myosotis;73000;BARBERAZ;FR;pierre.desandre@gmail.com;
+DESBIOLLESLUCIE;Client;LUCIE DESBIOLLES;215 Impasse du Crêt du Moulin;74930;PERS JUSSY;FR;contact@lucie-desbiolles.com;
+DPOINGT;Client;Mme Dominique POINGT;201 Rue du casino;73100;AIX LES BAINS;FR;dominiquepoingt@hotmail.fr;
+EBAGENCE;Client;EB AGENCEMENT;616 ROUTE D'HAUTEVILLE;73160;ST THIBAUD DE COUZ;FR;ebagencement73@gmail.com;
+ECHOPPEMAMI;Client;L'ECHOPPE DE MAMI;129 Route du Dauphiné;73670;ST PIERRE D ENTREMONT;FR;lechoppedemami@gmail.com;961664506
+ENFINREMPLOI;Client;MATERIAUTHEQUE ENFIN REEMPLOI;Rue du Dr Vernier;73000;CHAMBERY;FR;contact@enfin-reemploi.fr;
+EREEL;Client;E.REEL ANNECY;486 route des Prés Rollier;74330;SILLINGY;FR;cyril.eberle@ereel.fr;
+ERI;Client;E.R.I.;658 chemin des Varons;73370;LE BOURGET DU LAC;FR;eri.eri@wanadoo.fr;
+EXPERT2B;Client;EXPERT 2B;Chemin de Murs;73800;LES MARCHES;FR;;
+FAVRELORRAINE;Client;Me Elodie FAVRE-LORRAINE;7 impasse des prairies;74000;ANNECY;FR;efavre-lorraine@efi-avocats.com;
+FERACHEVAL;Client;AUBERGE DU FER A CHEVAL;M. et Mme CALMES;73170;YENNE;FR;fer.a.cheval@wanadoo.fr;04.79.36.70.33
+FPIGEX;Client;FPI GEX;15 Avenue du Pont de Tasset;74960;ANNECY;FR;s.dasse@france-proprete-immobiliere.fr;
+FRANHERVE;Client;M. et Mme François HERVE;36 Bis Chemin de la Grottes aux Fées;73100;BRISON ST INNOCENT;FR;francois.herve73@orange.fr;
+FREDVINIT;Client;FREDERIC VINIT;;73230;ST JEAN D ARVEY;FR;;
+GCONS;Client;M. Guillaume CONS;16 RTE DU CRET DES VIGNES;74290;VEYRIER DU LAC;FR;;
+GRANGEFERMETURES;Client;GRANGE FERMETURES;215 route de Vouchy;74540;ST SYLVESTRE;FR;info@grange-fermetures.com;
+GUIDETETASSO;Client;CABINET GUIDET ET ASSOCIES;2 rue de la poste;74000;ANNECY;FR;p.boel@fiscalis.net;428385999
+HERMANN;Client;HERMANN Evelyne;383 chemin de boissy;73420;VOGLANS;FR;;
+INPRESSCO;Client;IN'PRESSCO;670 Bd Lepic;73100;AIX LES BAINS;FR;alys@in-pressco.com;
+IS2S;Client;INFO SOLUTIONS 2S;180 RUE DU GENEVOIS;73000;CHAMBERY;FR;;
+JANINCHRIS;Client;Mme Christelle HURTER-JANIN;127 route des Bottières;73470;NOVALAISE;FR;christelle.hurter@orange.fr;
+JOTHIBAUT;Client;Jacques-Olivier THIBAUT;1 Rue St Maximin;69003;LYON 03;FR;j.ol.thibaut@orange.fr;
+JPSPEINT;Client;JPS PEINTURE;9 Avenue du pont de Tasset;74960;ANNECY;FR;contact@jpspeinture.com;
+JULIENCOUTIER;Client;Julien COUTIER;;73410;LA BIOLLE;FR;;
+LBCONSEIL;Client;LB CONSEIL;56 chemin des Bergères;1290;LAIZ;FR;lb@cdaformations.fr;
+LEAGAIME;Client;Léa GAIME;3 chemin des Combettes;73100;BRISON ST INNOCENT;FR;;
+LEFORTMN;Client;Nicole et Max LEFORT;73 chemin du Roustidou;83190;OLLIOULES;FR;"Max-lefort@outlook.com;grisehermione@outlook.fr";
+LEMAITREOEUVRE;Client;L.E. CONTRACTANT GENERAL SAS;265 Route de Myans;73190;APREMONT;FR;"secretariat@domo-savoie.fr;eric@domo-contractant.fr";
+LEPREVOSTDOM;Client;Dominique LEPREVOST;;73100;AIX LES BAINS;FR;dominique.leprevost@wanadoo.fr;
+LFIMMO;Client;LAFORET CHAMBERY - LF IMMO;1 rue de Boigne;73000;CHAMBERY;FR;apairault@laforet.com;
+MAIRCHIGNIN;Prospect;MAIRIE DE CHIGNIN;52 place de la Mairie;73800;CHIGNIN;FR;mairiedechignin@wanadoo.fr;479281012
+MBPLOMB;Client;MB PLOMBERIE CONCEPTION;476 CHEMIN DU VIOLET;73230;ST ALBAN LEYSSE;FR;contact@mbpc73.com;
+MBSCIABBARRASI;Client;Marie-Béatrice SCIABBARRASI;1 Chemin de Chevaline;73100;AIX LES BAINS;FR;smb.mabelvi@gmail.com;
+MCPI;Client;MCPI;15 Rue des Etoiles;74960;MEYTHET;FR;compta@mcpi.fr;450339020
+MERCIERSYL;Client;Mme Sylvie MERCIER DEPLANTE;Lieu-dit Les Doris;24100;ST LAURENT DES VIGNES;FR;sylvie.mercier@outlook.com;
+MMEBOUTET;Client;Mme BOUTET;;74950;SCIONZIER;FR;mfboutet@outlook.com;
+MMTILLET;Client;MAISON MEDICALE DU TILLET;11 route nationale de Chambéry;73420;VIVIERS DU LAC;FR;kvissac@orange.fr;
+MVIMMO;Client;M.V. IMMO;128 Chemin de corsuet;73100;AIX LES BAINS;FR;vattano.martial@orange.fr;
+MVOCOURT;Client;MVO;25 route de Nanfray;74960;ANNECY;FR;aurelie.miege.agt@axa.fr;
+NBO;Client;NBO ET ARCHITECTES ASSOCIES;1461 Route de Juffly;74250;FILLINGES;FR;nelly.guyot@nbo-aa.com;
+NUAGE;Client;NUAGE CONCEPT;174 CHEMIN SOUS BOIS;73420;VOGLANS;FR;emilie-maniez@nuageconcept.fr;
+OGELEC;Client;OGELEC;173 chemin du Frettey;73230;ST ALBAN LEYSSE;FR;olivier@ogelec.tech;
+ONLIFE;Client;ONLIFE COURTAGE;8 B Chemin de l'industrie;69570;DARDILLY;FR;lgigandon@onlifecourtage.fr;
+ORIAGE;Client;ORIAGE;6 rue du Docteur Varay;74000;ANNECY;FR;sarah.berthe@oriage.fr;
+ORIGINESARCHI;Client;ORIGINES ARCHITECTEURS;1461 Route de Juffly;74250;FILLINGES;FR;nelly.guyot@nbo-aa.com;
+PBA;Client;PBA ELECTRICITE;13 rue de Sansy;74600;SEYNOD;FR;pbaelectricite@orange.fr;450673747
+PENA;Prospect;PENA CHACON;136 rue du Cotteau;74350;CRUSEILLES;FR;pena.chacon@gmail.com;
+PHILEASSAVOIE;Client;PHILEAS WORLD SAVOIE;14 rue Président Coty;73200;ALBERTVILLE;FR;cindy.abondance@phileas-world.fr;
+PLATINIUMRH;Client;PLATINIUM SOLUTIONS RH;5 avenue Charles De Gaulle;73100;AIX LES BAINS;FR;bm@benmetzger.net;
+POLLIERCLAUDE;Client;M. CLAUDE POLLIER;60A rue de l'Eglise;38230;TIGNIEU JAMEYZIEU;FR;;
+PREMIUMSPA;Client;PREMIUM SPAS GROUP;Parc du Calvi;74330;POISY;FR;stephane.branche@premiumspasgroup.com;
+RAOULTOPHELIE;Client;Me Ophélie RAOULT;1 Rue Favre;73000;CHAMBERY;FR;ophelie@raoult-avocat.fr;
+RATTINM;Client;M. Michel RATTIN;60 Chemin de Combelle;73190;ST BALDOPH;FR;michel.rattin@orange.fr;
+RECORBETLYONEL;Client;M. Lyonel RECORBET;11, route de Provins;74940;ANNECY LE VIEUX;FR;lrecorbet@hotmail.com;
+SAGA;Client;SAGANEO;PARC D'ACTIVITES ALPESPACE;73800;STE HELENE DU LAC;FR;ofenestraz@saganeo.fr;
+SAINTJUVINL;Client;Laetitia SAINT-JUVIN;433 CHE DE CHARRIERE NEUVE;73000;CHAMBERY;FR;laezard@hotmail.fr;
+SBS;Client;S.B.S. CHARPENTE;536, Route du Viéran;74370;Saint-Martin-Bellevue;FR;secretariat@sbs-charpente.com;
+SCE;Client;SAVOIE COUVERTURE ETANCHEITE;Savoie Hexapole;74420;MERY;FR;sce@sce73.fr;04 79 63 49 67
+SCHRIVERMU;Client;Muriel SCHRIVER;EMPREINTE DE RESSOURCES;74000;ANNECY;FR;muriel.schriver@empreintederessources.com;
+SCIPLH;Client;SCI PLH;75 rue de la Petite Eau;73290;LA MOTTE SERVOLEX;FR;info@cps-conseil.fr;04 79 26 41 41
+SEURINFLO;Client;CHEZ FLORENCE;5, rue du Nivolet;73000;BARBERAZ;FR;florence.seurin@free.fr;
+SMBPATRIMOINE;Client;SMB PATRIMOINE;1176 Route de Belossier;74290;ALEX;FR;f.arnoux@capiseis.com;
+SOEURSSTJOSEPH;Client;CONGREGATION DES SOEURS DE SAINT JOSEPH;497 chemin des Rendez-Vous;73000;CHAMBERY;FR;Gestion.stjo.chambery@gmail.com;
+STEPHBARJON;Client;Stéphanie BARJON;1 Rue Joseph Blanc;74000;ANNECY;FR;contact@cabinet-reflexe.com;
+SUZANNE;Client;SUZANNE HURTER EDITIONS;54 ROUTE DE FLORISSANT;1206;GENEVE;CH;hurter@vtx.ch;
+TEST;Client;Olivier TEST;;73100;BRISON ST INNOCENT;FR;olivierroger@outlook.com;
+TEST2;Client;test olivier;;;;;;
+TRADINNOV;Client;TRADINNOV CHARPENTE;154 le Mas;73440;LES BELLEVILLE;FR;tradinnovcharpente@gmail.com;
+TRANSGRUM;Client;TRANS GRUMES DE CHARTREUSE;454 ROUTE DES BUIS;73670;ST PIERRE D ENTREMONT;FR;Transgrumes@orange.fr;
+TRIUMCONSEILS;Client;TRIUM CONSEIL ANNECY;86 av Gambetta;74000;ANNECY;FR;r.siegfried@triumconseil.com;04 50 09 50 50
+TRIUMHOLDING;Client;TRIUM CONSEIL HOLDING;86 av Gambetta;74000;ANNECY;FR;r.siegfried@triumconseil.com;04 50 09 50 50
+VAGABONDE;Client;LA VAGABONDE;617 route des Gotteland;73000;BARBERAZ;FR;epicerieambulante.fg@gmail.com;
+VERRONFRED;Client;M. Frédéric VERRON;3 Chemin de la Platière;73170;ST JEAN DE CHEVELU;FR;fredvron@outlook.com;
+VETDUFROID;Client;LE VETEMENT DU FROID;356 route de Chavanne;74330;POISY;FR;b.chloe@levetementdufroid.com;
+VFIORESE;Client;Mme Véronique FIORESE;150 route de Saint-champ;1300;MASSIGNIEU DE RIVES;FR;verofio@aol.com;

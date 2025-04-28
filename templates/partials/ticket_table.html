@@ -1,0 +1,69 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Titre</th>
+      <th>Client</th>
+      <th>Statut</th>
+      <th>Urgence</th>
+      <th>Temps passé</th>
+      <th>Date de création</th>
+      <th>Date début</th>
+      <th>Date fin</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ticket in tickets %}
+    <tr>
+      <td>{{ ticket.titre }}</td>
+      <td>{{ ticket.client.nom }}</td>
+      <td>
+        {% if ticket.statut == 'En attente' %}
+          <span class="badge-statut badge-attente">⏳ En attente</span>
+        {% elif ticket.statut == 'En cours' %}
+          <span class="badge-statut badge-encours">🔧 En cours</span>
+        {% elif ticket.statut == 'Terminé' %}
+          <span class="badge-statut badge-termine">✅ Terminé</span>
+        {% else %}
+          {{ ticket.statut }}
+        {% endif %}
+      </td>
+      <td>
+        {% if ticket.urgence == 'Critique' %}
+          <span class="badge-urgence badge-critique">Critique</span>
+        {% elif ticket.urgence == 'Urgent' %}
+          <span class="badge-urgence badge-urgent">Urgent</span>
+        {% elif ticket.urgence == 'Normal' %}
+          <span class="badge-urgence badge-normal">Normal</span>
+        {% elif ticket.urgence == 'Faible' %}
+          <span class="badge-urgence badge-faible">Faible</span>
+        {% else %}
+          Non défini
+        {% endif %}
+      </td>
+      <td>{{ ticket.temps_passe }} min</td>
+      <td>{{ ticket.date_creation.strftime('%d/%m/%Y %H:%M') if ticket.date_creation else "-" }}</td>
+      <td>{{ ticket.date_debut.strftime('%d/%m/%Y %H:%M') if ticket.date_debut else "-" }}</td>
+      <td>{{ ticket.date_fin.strftime('%d/%m/%Y %H:%M') if ticket.date_fin else "-" }}</td>
+      <td>
+        <a class="btn btn-info btn-sm mb-1" href="{{ url_for('tickets.detail', ticket_id=ticket.id) }}">Voir</a>
+
+        {% if current_user.role == 'technicien' %}
+          {% if ticket.utilisateur_id == current_user.id %}
+            <form action="{{ url_for('tickets.reassign_to_support', ticket_id=ticket.id) }}" method="POST" style="display:inline;">
+              <button type="submit" class="btn btn-warning btn-sm mb-1" onclick="return confirm('Renvoyer ce ticket au support ?')">
+                🔁 Repasser au support
+              </button>
+            </form>
+          {% elif ticket.groupe_assignation == 'support' and not ticket.utilisateur_id %}
+            <form action="{{ url_for('tickets.assign', ticket_id=ticket.id) }}" method="POST" style="display:inline;">
+              <button type="submit" class="btn btn-success btn-sm mb-1">🛠️ Prendre</button>
+            </form>
+          {% endif %}
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+

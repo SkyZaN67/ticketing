@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Créer un ticket</h2>
+
+<form method="post" id="ticketForm">
+    <!-- Client -->
+    <label>Client</label>
+    <input list="clientList" name="client_nom" class="form-control mb-2" required placeholder="Nom du client">
+    <datalist id="clientList">
+        {% for client in clients %}
+            <option value="{{ client.nom }}"></option>
+        {% endfor %}
+    </datalist>
+
+    <!-- Titre -->
+    <label>Titre</label>
+    <input name="titre" class="form-control mb-2" required>
+
+    <!-- Description -->
+    <label>Description</label>
+    <textarea name="description" class="form-control mb-2" required></textarea>
+
+    <!-- Demandeur -->
+    <label>Demandeur</label>
+    <input name="demandeur" class="form-control mb-2" required>
+
+    <!-- Téléphone -->
+    <label>Téléphone</label>
+    <input name="telephone" id="telephone" class="form-control mb-2"
+           placeholder=""
+           pattern="^0[1-9](\.[0-9]{2}){4}$"
+           title="Format attendu : 06.06.06.06.06"
+           required>
+
+    <!-- Urgence -->
+    <label>Urgence</label>
+    <select name="urgence" class="form-control mb-3" required>
+        <option value="Faible">Faible</option>
+        <option value="Normal" selected>Normal</option>
+        <option value="Urgent">Urgent</option>
+        <option value="Critique">Critique</option>
+    </select>
+
+    <!-- Assignation -->
+    <label>Assigner à</label>
+    <select name="utilisateur_id" class="form-control mb-3">
+        <option value="">Non assigné</option>
+        <option value="support">Support (groupe)</option>
+        {% for user in utilisateurs %}
+            <option value="{{ user.id }}">{{ user.nom }}</option>
+        {% endfor %}
+    </select>
+
+    <!-- Bouton -->
+    <button class="btn btn-success">Créer</button>
+</form>
+
+<!-- 🔍 Trouve client + auto-format téléphone -->
+<script>
+    const clients = {{ clients|tojson }};
+    const inputNom = document.querySelector('input[name="client_nom"]');
+    const form = document.getElementById('ticketForm');
+
+    form.addEventListener('submit', function (e) {
+        const nom = inputNom.value;
+        const client = clients.find(c => c.nom === nom);
+        if (client) {
+            const hidden = document.createElement('input');
+            hidden.type = 'hidden';
+            hidden.name = 'client_id';
+            hidden.value = client.id;
+            form.appendChild(hidden);
+        } else {
+            alert("❌ Client introuvable !");
+            e.preventDefault();
+        }
+    });
+
+    // 📱 Auto-format téléphone
+    const telInput = document.getElementById("telephone");
+    telInput.addEventListener("input", function () {
+        let numbers = this.value.replace(/\D/g, "");
+        if (numbers.length > 10) numbers = numbers.slice(0, 10);
+        let formatted = numbers.replace(/(\d{2})(?=\d)/g, "$1.").slice(0, 14);
+        this.value = formatted;
+    });
+</script>
+
+{% endblock %}
+

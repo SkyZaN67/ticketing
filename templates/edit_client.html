@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Modifier le client</h2>
+
+<form method="post">
+    <label>Nom</label>
+    <input name="nom" class="form-control mb-2" value="{{ client.nom }}" required>
+
+    <label>Email</label>
+    <input name="email" class="form-control mb-2" type="email" value="{{ client.email or '' }}">
+
+    <label>Téléphone</label>
+    <input name="telephone" class="form-control mb-2" value="{{ client.telephone or '' }}">
+
+    <button class="btn btn-success">Enregistrer</button>
+    <a href="{{ url_for('dashboard.index') }}" class="btn btn-secondary">Annuler</a>
+</form>
+
+{% endblock %}
+

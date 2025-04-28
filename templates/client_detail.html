@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- 🎨 Styles badges -->
+<style>
+  .badge-urgence, .badge-statut {
+    padding: 4px 8px;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline-block;
+  }
+  .badge-critique { background-color: #8B0000; color: white; }
+  .badge-urgent   { background-color: #FF0000; color: white; }
+  .badge-normal   { background-color: #FFA500; color: black; }
+  .badge-faible   { background-color: #FFFF66; color: black; }
+  .badge-attente  { background-color: #6c757d; color: white; }
+  .badge-encours  { background-color: #0d6efd; color: white; }
+  .badge-termine  { background-color: #198754; color: white; }
+</style>
+
+<h2>{{ client.nom }}</h2>
+<p>Téléphone : {{ client.telephone if client.telephone else "N/A" }}</p>
+<a class="btn btn-primary mb-3" href="/tickets/create/{{ client.id }}">Créer un ticket</a>
+
+<!-- 📅 Sélecteur d'année -->
+{% if client.solde_annuel %}
+  <form method="get" class="mb-4">
+    <label for="annee">📅 Choisir l’année :</label>
+    <select name="annee" id="annee" class="form-select d-inline-block w-auto ms-2" onchange="this.form.submit()">
+      {% for an in client.solde_annuel.keys()|sort %}
+        <option value="{{ an }}" {% if annee == an %}selected{% endif %}>{{ an }}</option>
+      {% endfor %}
+    </select>
+  </form>
+
+  <!-- 🎯 Solde -->
+  <div class="row text-center mb-4">
+    <div class="col-md-4">
+      <div class="p-3 bg-light border rounded">
+        <h5>🎯 Solde total</h5>
+        <p class="fs-5">{{ solde_total }} min</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 bg-light border rounded">
+        <h5>⏱️ Temps utilisé</h5>
+        <p class="fs-5">{{ total_utilise }} min</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 bg-light border rounded">
+        <h5>💼 Solde restant</h5>
+        <p class="fs-5">{{ solde_restant }} min</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ➕ Ajouter ou corriger -->
+  <div class="card p-3 mb-4">
+    <h5>➕ Ajouter ou corriger le solde</h5>
+    <form method="POST" action="{{ url_for('clients.add_solde', client_id=client.id) }}">
+      <input type="hidden" name="annee" value="{{ annee }}">
+      
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="contrat_id">Sélectionner un contrat :</label>
+          <select name="contrat_id" id="contrat_id" class="form-select">
+            <option value="">-- Aucun contrat --</option>
+            {% for contrat in contrats %}
+            <option value="{{ contrat.id }}"
+              {% if client.contrat_id == contrat.id %}selected{% endif %}
+              data-nom="{{ contrat.nom }}" data-duree="{{ contrat.duree }}" data-prix="{{ contrat.prix_horaire }}">
+              {{ contrat.nom }} ({{ contrat.duree }} h)
+            </option>
+            {% endfor %}
+          </select>
+
+          <div id="contrat_info" class="mt-3 text-primary fw-bold"></div>
+        </div>
+        
+        <div class="col-md-6 mb-3">
+          <label for="nouveau_solde">⚡ Ou entrer un nouveau solde :</label>
+          <input type="number" name="nouveau_solde" id="nouveau_solde" class="form-control" placeholder="En minutes">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">✅ Mettre à jour</button>
+    </form>
+  </div>
+
+  <!-- 🔄 Reporter solde -->
+  <div class="text-center mb-4">
+    <form method="POST" action="{{ url_for('clients.report_solde', client_id=client.id) }}">
+      <input type="hidden" name="annee" value="{{ annee }}">
+      <button type="submit" class="btn btn-success">
+        🔄 Reporter sur {{ annee | int + 1 }}
+      </button>
+    </form>
+  </div>
+
+{% else %}
+  <div class="alert alert-warning">
+    Aucun solde annuel renseigné.
+  </div>
+{% endif %}
+
+<!-- 🧾 Tickets -->
+<h4>Tickets - Année {{ annee }}</h4>
+<table id="tableTickets" class="display table table-striped">
+  <thead>
+    <tr>
+      <th>Titre</th>
+      <th>Demandeur</th>
+      <th>Intervenant</th>
+      <th>Statut</th>
+      <th>Urgence</th>
+      <th>Temps passé</th>
+      <th>Temps facturé</th>
+      <th>Date de création</th>
+      <th>Date début</th>
+      <th>Date fin</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ticket in tickets %}
+    <tr>
+      <td>{{ ticket.titre }}</td>
+      <td>{{ ticket.demandeur or 'Non précisé' }}</td>
+      <td>{{ ticket.utilisateur.nom if ticket.utilisateur else 'Non assigné' }}</td>
+      <td>
+        {% if ticket.statut == 'En attente' %}
+          <span class="badge-statut badge-attente">⏳ En attente</span>
+        {% elif ticket.statut == 'En cours' %}
+          <span class="badge-statut badge-encours">🔧 En cours</span>
+        {% elif ticket.statut == 'Terminé' %}
+          <span class="badge-statut badge-termine">✅ Terminé</span>
+        {% else %}
+          {{ ticket.statut }}
+        {% endif %}
+      </td>
+      <td>
+        {% if ticket.urgence == 'Critique' %}
+          <span class="badge-urgence badge-critique">Critique</span>
+        {% elif ticket.urgence == 'Urgent' %}
+          <span class="badge-urgence badge-urgent">Urgent</span>
+        {% elif ticket.urgence == 'Normal' %}
+          <span class="badge-urgence badge-normal">Normal</span>
+        {% elif ticket.urgence == 'Faible' %}
+          <span class="badge-urgence badge-faible">Faible</span>
+        {% else %}
+          Non définie
+        {% endif %}
+      </td>
+      <td>{{ ticket.temps_passe }} min</td>
+      <td><strong>{{ ticket.temps_facture }} min</strong></td>
+      <td>{{ ticket.date_creation.strftime('%d/%m/%Y %H:%M') }}</td>
+      <td>{{ ticket.date_debut.strftime('%d/%m/%Y %H:%M') if ticket.date_debut else '-' }}</td>
+      <td>{{ ticket.date_fin.strftime('%d/%m/%Y %H:%M') if ticket.date_fin else '-' }}</td>
+      <td>
+        <a href="{{ url_for('tickets.detail', ticket_id=ticket.id) }}" class="btn btn-sm btn-outline-primary me-1">✏️</a>
+        <form action="{{ url_for('tickets.delete', ticket_id=ticket.id) }}" method="POST" style="display:inline;" onsubmit="return confirm('Supprimer ce ticket ?')">
+          <button type="submit" class="btn btn-sm btn-outline-danger">🗑️</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- Scripts -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#tableTickets').DataTable({
+      language: {
+        search: "🔍 Rechercher :",
+        lengthMenu: "Afficher _MENU_ tickets par page",
+        zeroRecords: "Aucun ticket trouvé",
+        info: "Page _PAGE_ sur _PAGES_",
+        infoEmpty: "Aucun ticket",
+        infoFiltered: "(filtré sur _MAX_ tickets)"
+      }
+    });
+
+    const selectAnnee = document.getElementById('annee');
+    const selectContrat = document.getElementById('contrat_id');
+    const contratInfo = document.getElementById('contrat_info');
+    const inputNouveauSolde = document.getElementById('nouveau_solde');
+
+    function updateContratDisplay() {
+      const selectedOption = selectContrat.options[selectContrat.selectedIndex];
+      const nom = selectedOption.getAttribute('data-nom');
+      const duree = selectedOption.getAttribute('data-duree');
+      const prix = selectedOption.getAttribute('data-prix');
+
+      if (nom && duree && prix) {
+        contratInfo.innerHTML = `📝 Contrat : <strong>${nom}</strong> - ${duree}h - ${prix}€/h`;
+        inputNouveauSolde.value = parseInt(duree) * 60;
+      } else {
+        contratInfo.innerHTML = "";
+        inputNouveauSolde.value = "";
+      }
+    }
+
+    selectContrat.addEventListener('change', updateContratDisplay);
+
+    selectAnnee.addEventListener('change', function() {
+      selectContrat.value = "";
+      contratInfo.innerHTML = "";
+      inputNouveauSolde.value = "";
+    });
+
+    if (selectContrat.value) {
+      updateContratDisplay();
+    }
+  });
+</script>
+
+{% endblock %}

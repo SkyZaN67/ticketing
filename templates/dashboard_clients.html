@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Mes Clients</h2>
+
+<a class="btn btn-success mb-3" href="{{ url_for('clients.create') }}">+ Nouveau client</a>
+
+
+<table id="clientsTable" class="display table table-bordered">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Téléphone</th>
+      <th>Email</th>
+      <th>Contrat</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for client in clients %}
+    <tr>
+      <td>{{ client.nom }}</td>
+      <td>{{ client.telephone or "N/A" }}</td>
+      <td>{{ client.email or "N/A" }}</td>
+      <td data-order="{{ 1 if client.contrat else 0 }}">
+        <form method="POST" action="{{ url_for('clients.update_contrat', client_id=client.id) }}">
+          <select name="contrat" onchange="this.form.submit()" class="form-control form-control-sm">
+            <option value="True" {% if client.contrat %}selected{% endif %}>Oui</option>
+            <option value="False" {% if not client.contrat %}selected{% endif %}>Non</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <a href="{{ url_for('clients.detail', client_id=client.id) }}" class="btn btn-sm btn-primary mb-1">Voir</a>
+        <a href="{{ url_for('clients.edit', client_id=client.id) }}" class="btn btn-sm btn-warning mb-1">Modifier</a>
+        <form method="POST" action="{{ url_for('clients.delete', client_id=client.id) }}"
+              onsubmit="return confirm('⚠️ Es-tu sûr de vouloir supprimer ce client ?');"
+              style="display:inline;">
+          <button class="btn btn-sm btn-danger">Supprimer</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- DataTables CSS/JS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#clientsTable').DataTable({
+      language: {
+        search: "🔍 Rechercher :",
+        lengthMenu: "Afficher _MENU_ clients par page",
+        zeroRecords: "Aucun client trouvé",
+        info: "Page _PAGE_ sur _PAGES_",
+        infoEmpty: "Aucun client disponible",
+        infoFiltered: "(filtré sur _MAX_ clients au total)"
+      }
+    });
+  });
+</script>
+{% endblock %}
+

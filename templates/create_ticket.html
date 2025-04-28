@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Nouveau ticket</h2>
+
+<form method="post">
+
+    <!-- Titre -->
+    <input name="titre" class="form-control mb-2" placeholder="Titre" required>
+
+    <!-- Description -->
+    <textarea name="description" class="form-control mb-2" placeholder="Description" required></textarea>
+
+    <!-- Demandeur -->
+    <input name="demandeur" class="form-control mb-2" placeholder="Demandeur" required>
+
+    <!-- Téléphone (format 06.12.34.56.78 avec auto-format JS) -->
+    <input type="text" name="telephone" id="telephone" class="form-control mb-2"
+           placeholder="Téléphone (ex: 06.12.34.56.78)" 
+           pattern="^0[1-9](\.\d{2}){4}$"
+           title="Format attendu : 06.12.34.56.78" required>
+
+    <!-- Assignation -->
+    <label for="utilisateur_id">Assigner à</label>
+    <select name="utilisateur_id" class="form-control mb-3">
+        <option value="">Non assigné</option>
+        <option value="support">Support (groupe)</option>
+        {% for user in utilisateurs %}
+            <option value="{{ user.id }}">{{ user.nom }}</option>
+        {% endfor %}
+    </select>
+
+    <!-- Urgence -->
+    <div class="form-group mb-3">
+        <label for="urgence">Degré d'urgence</label>
+        <select name="urgence" class="form-control">
+            <option value="Faible">Faible</option>
+            <option value="Normal" selected>Normal</option>
+            <option value="Urgent">Urgent</option>
+            <option value="Critique">Critique</option>
+        </select>
+    </div>
+
+    <!-- Bouton -->
+    <button class="btn btn-success">Créer</button>
+</form>
+
+<!-- 📱 Auto-format téléphone -->
+<script>
+  const telInput = document.getElementById("telephone");
+
+  telInput.addEventListener("input", function () {
+    let numbers = this.value.replace(/\D/g, ""); // supprime tout sauf les chiffres
+    if (numbers.length > 10) numbers = numbers.slice(0, 10); // max 10 chiffres
+    let formatted = numbers.replace(/(\d{2})(?=\d)/g, "$1.").slice(0, 14); // ajoute des points
+    this.value = formatted;
+  });
+</script>
+
+{% endblock %}
+

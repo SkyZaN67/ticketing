@@ -1,0 +1,39 @@
+
+/* IT360 Custom Styles */
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+  color: #0d6efd;
+}
+
+.table th {
+  background-color: #e3f2fd;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.btn-primary, .btn-outline-primary {
+  border-radius: 20px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-danger:hover {
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.shadow-box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+}

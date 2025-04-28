@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ ticket.titre }}</h2>
+<p><strong>Demandeur :</strong> {{ ticket.demandeur or "Non précisé" }}</p>
+<p>{{ ticket.description }}</p>
+
+<form method="post">
+    <div class="mb-2">
+        <label>Statut</label>
+        <select name="statut" class="form-control">
+            <option {% if ticket.statut == 'En attente' %}selected{% endif %}>En attente</option>
+            <option {% if ticket.statut == 'En cours' %}selected{% endif %}>En cours</option>
+            <option {% if ticket.statut == 'Terminé' %}selected{% endif %}>Terminé</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="rapport">Rapport d’intervention</label>
+        <textarea class="form-control" id="rapport" name="rapport">{{ ticket.rapport or '' }}</textarea>
+    </div>
+
+    <div class="form-group mb-2">
+        <label for="observation">Observation</label>
+        <textarea class="form-control" id="observation" name="observation">{{ ticket.observation or '' }}</textarea>
+    </div>
+
+    <!-- Matériel fourni -->
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="materiel_fourni" name="materiel_fourni"
+               {% if ticket.materiel_fourni %}checked{% endif %}>
+        <label class="form-check-label" for="materiel_fourni">
+            📦 Matériel fourni
+        </label>
+    </div>
+
+    <!-- Temps passé -->
+    <div class="mb-2">
+        <label for="mode_temps_passe">Temps passé</label>
+        <select id="mode_temps_passe" name="mode_temps_passe" class="form-control" onchange="toggleTempsPasse(this)">
+            <option value="auto" {% if ticket.temps_passe_personnalise is none %}selected{% endif %}>Auto ({{ ticket.temps_passe }} min)</option>
+            <option value="manuel" {% if ticket.temps_passe_personnalise is not none %}selected{% endif %}>Saisie manuelle</option>
+        </select>
+    </div>
+
+    <div class="mb-2" id="bloc_temps_passe_manuel" style="display: none;">
+        <input type="number" name="temps_passe" class="form-control"
+               value="{{ ticket.temps_passe_personnalise if ticket.temps_passe_personnalise is not none else '' }}"
+               placeholder="Ex: 45 (minutes)">
+        <small class="text-muted">Laisse vide pour utiliser la durée entre la date de début et de fin.</small>
+    </div>
+
+    <!-- Temps facturé -->
+    <div class="mb-2">
+        <label>Temps facturé</label>
+        <select name="temps_facture_personnalise" class="form-control">
+            <option value="">Auto ({{ ticket.temps_facture }} min)</option>
+            <option value="0" {% if ticket.temps_facture_personnalise == 0 %}selected{% endif %}>0 min (0h00)</option>
+            {% for t in range(15, 241, 15) %}
+                <option value="{{ t }}" {% if ticket.temps_facture_personnalise == t %}selected{% endif %}>{{ t }} min ({{ t // 60 }}h{{ '%02d' % (t % 60) }})</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <!-- Technicien -->
+    <div class="mb-2">
+        <label>Technicien assigné</label>
+        <select name="utilisateur_id" class="form-control">
+            <option value="">Non assigné</option>
+            {% for user in utilisateurs %}
+                <option value="{{ user.id }}" {% if ticket.utilisateur_id == user.id %}selected{% endif %}>{{ user.nom }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button class="btn btn-primary">Mettre à jour</button>
+    <a href="{{ url_for('tickets.export_ticket', ticket_id=ticket.id) }}" class="btn btn-secondary mt-3">📄 Télécharger la fiche d’intervention</a>
+</form>
+
+<script>
+function toggleTempsPasse(select) {
+    const bloc = document.getElementById('bloc_temps_passe_manuel');
+    if (select.value === 'manuel') {
+        bloc.style.display = 'block';
+    } else {
+        bloc.style.display = 'none';
+        document.querySelector('input[name="temps_passe"]').value = '';
+    }
+}
+window.onload = function () {
+    toggleTempsPasse(document.getElementById('mode_temps_passe'));
+};
+</script>
+
+{% endblock %}

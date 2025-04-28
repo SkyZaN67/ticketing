@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="mb-4 text-primary">📑 Liste des Contrats</h2>
+
+<form method="POST">
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Nom du contrat</th>
+        <th>Durée (h)</th>
+        <th>Prix horaire (€)</th>
+        <th>Prix total (€)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for contrat in contrats %}
+      <tr>
+        <td>{{ contrat.nom }}</td>
+        <td>{{ contrat.duree }}</td>
+        <td>
+          <input type="number" name="prix_horaire_{{ contrat.id }}" class="form-control" value="{{ contrat.prix_horaire }}" step="0.01" min="0">
+        </td>
+        <td>{{ contrat.prix_total }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="text-center mt-4">
+  <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
+</div>
+</form>
+
+{% endblock %}
