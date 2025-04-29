@@ -16,3 +16,4 @@ gunicorn
 Flask-Login
 Flask-Mail
 Pytz
+Docx
